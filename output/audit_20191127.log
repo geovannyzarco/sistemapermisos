@@ -1,0 +1,9 @@
+Date	Time	IP	User	Table	Action	Key field	Field	Old value	New value
+nov. 27,2019	11:29:34	127.0.0.1	EP00116	dbo.EMPLEADO	failed login
+nov. 27,2019	11:29:40	127.0.0.1	EP00116	dbo.EMPLEADO	login
+nov. 27,2019	11:34:02	127.0.0.1	EP00116	dbo.EMPLEADO	failed login
+nov. 27,2019	11:34:06	127.0.0.1	EP00116	dbo.EMPLEADO	login
+nov. 27,2019	11:35:18	127.0.0.1	EP00116	dbo.EMPLEADO	login
+nov. 27,2019	11:38:37	127.0.0.1	EP00116	dbo.EMPLEADO	login
+nov. 27,2019	14:02:14	127.0.0.1	EP00116	dbo.EMPLEADO	login
+nov. 27,2019	15:05:34	127.0.0.1	EP00116	dbo.EMPLEADO	login

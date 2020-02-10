@@ -1,0 +1,17 @@
+@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = MVCFunctions.GetWebRootPath();
+}
+
+ <center>
+<p>Departamento de Sistemas y Tecnologia - DESIT 2020</p>
+ </center>

@@ -1,0 +1,154 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = MVCFunctions.GetWebRootPath();
+}
+
+	@foreach (string _item1_menulink in Model.GetSection("item1_menulink", this)){
+	<OPTION @(Model.displayVar("item1_optionattrs")) @{foreach (string _item1_current in Model.GetSection("item1_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item1_nbsps"))@(Model.displayVar("item1_title"))
+	</OPTION>
+	}
+	@foreach (string _item2_menulink in Model.GetSection("item2_menulink", this)){
+	<OPTION @(Model.displayVar("item2_optionattrs")) @{foreach (string _item2_current in Model.GetSection("item2_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item2_nbsps"))@(Model.displayVar("item2_title"))
+	</OPTION>
+	}
+	@foreach (string _item3_menulink in Model.GetSection("item3_menulink", this)){
+	<OPTION @(Model.displayVar("item3_optionattrs")) @{foreach (string _item3_current in Model.GetSection("item3_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item3_nbsps"))@(Model.displayVar("item3_title"))
+	</OPTION>
+	}
+	@foreach (string _item4_menulink in Model.GetSection("item4_menulink", this)){
+	<OPTION @(Model.displayVar("item4_optionattrs")) @{foreach (string _item4_current in Model.GetSection("item4_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item4_nbsps"))@(Model.displayVar("item4_title"))
+	</OPTION>
+	}
+	@foreach (string _item5_menulink in Model.GetSection("item5_menulink", this)){
+	<OPTION @(Model.displayVar("item5_optionattrs")) @{foreach (string _item5_current in Model.GetSection("item5_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item5_nbsps"))@(Model.displayVar("item5_title"))
+	</OPTION>
+	}
+	@foreach (string _item6_menulink in Model.GetSection("item6_menulink", this)){
+	<OPTION @(Model.displayVar("item6_optionattrs")) @{foreach (string _item6_current in Model.GetSection("item6_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item6_nbsps"))@(Model.displayVar("item6_title"))
+	</OPTION>
+	}
+	@foreach (string _item7_menulink in Model.GetSection("item7_menulink", this)){
+	<OPTION @(Model.displayVar("item7_optionattrs")) @{foreach (string _item7_current in Model.GetSection("item7_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item7_nbsps"))@(Model.displayVar("item7_title"))
+	</OPTION>
+	}
+	@foreach (string _item8_menulink in Model.GetSection("item8_menulink", this)){
+	<OPTION @(Model.displayVar("item8_optionattrs")) @{foreach (string _item8_current in Model.GetSection("item8_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item8_nbsps"))@(Model.displayVar("item8_title"))
+	</OPTION>
+	}
+	@foreach (string _item9_menulink in Model.GetSection("item9_menulink", this)){
+	<OPTION @(Model.displayVar("item9_optionattrs")) @{foreach (string _item9_current in Model.GetSection("item9_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item9_nbsps"))@(Model.displayVar("item9_title"))
+	</OPTION>
+	}
+	@foreach (string _item10_menulink in Model.GetSection("item10_menulink", this)){
+	<OPTION @(Model.displayVar("item10_optionattrs")) @{foreach (string _item10_current in Model.GetSection("item10_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item10_nbsps"))@(Model.displayVar("item10_title"))
+	</OPTION>
+	}
+	@foreach (string _item11_menulink in Model.GetSection("item11_menulink", this)){
+	<OPTION @(Model.displayVar("item11_optionattrs")) @{foreach (string _item11_current in Model.GetSection("item11_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item11_nbsps"))@(Model.displayVar("item11_title"))
+	</OPTION>
+	}
+	@foreach (string _item12_menulink in Model.GetSection("item12_menulink", this)){
+	<OPTION @(Model.displayVar("item12_optionattrs")) @{foreach (string _item12_current in Model.GetSection("item12_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item12_nbsps"))@(Model.displayVar("item12_title"))
+	</OPTION>
+	}
+	@foreach (string _item13_menulink in Model.GetSection("item13_menulink", this)){
+	<OPTION @(Model.displayVar("item13_optionattrs")) @{foreach (string _item13_current in Model.GetSection("item13_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item13_nbsps"))@(Model.displayVar("item13_title"))
+	</OPTION>
+	}
+	@foreach (string _item14_menulink in Model.GetSection("item14_menulink", this)){
+	<OPTION @(Model.displayVar("item14_optionattrs")) @{foreach (string _item14_current in Model.GetSection("item14_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item14_nbsps"))@(Model.displayVar("item14_title"))
+	</OPTION>
+	}
+	@foreach (string _item15_menulink in Model.GetSection("item15_menulink", this)){
+	<OPTION @(Model.displayVar("item15_optionattrs")) @{foreach (string _item15_current in Model.GetSection("item15_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item15_nbsps"))@(Model.displayVar("item15_title"))
+	</OPTION>
+	}
+	@foreach (string _item16_menulink in Model.GetSection("item16_menulink", this)){
+	<OPTION @(Model.displayVar("item16_optionattrs")) @{foreach (string _item16_current in Model.GetSection("item16_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item16_nbsps"))@(Model.displayVar("item16_title"))
+	</OPTION>
+	}
+	@foreach (string _item17_menulink in Model.GetSection("item17_menulink", this)){
+	<OPTION @(Model.displayVar("item17_optionattrs")) @{foreach (string _item17_current in Model.GetSection("item17_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item17_nbsps"))@(Model.displayVar("item17_title"))
+	</OPTION>
+	}
+	@foreach (string _item18_menulink in Model.GetSection("item18_menulink", this)){
+	<OPTION @(Model.displayVar("item18_optionattrs")) @{foreach (string _item18_current in Model.GetSection("item18_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item18_nbsps"))@(Model.displayVar("item18_title"))
+	</OPTION>
+	}
+	@foreach (string _item19_menulink in Model.GetSection("item19_menulink", this)){
+	<OPTION @(Model.displayVar("item19_optionattrs")) @{foreach (string _item19_current in Model.GetSection("item19_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item19_nbsps"))@(Model.displayVar("item19_title"))
+	</OPTION>
+	}
+	@foreach (string _item20_menulink in Model.GetSection("item20_menulink", this)){
+	<OPTION @(Model.displayVar("item20_optionattrs")) @{foreach (string _item20_current in Model.GetSection("item20_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item20_nbsps"))@(Model.displayVar("item20_title"))
+	</OPTION>
+	}
+	@foreach (string _item21_menulink in Model.GetSection("item21_menulink", this)){
+	<OPTION @(Model.displayVar("item21_optionattrs")) @{foreach (string _item21_current in Model.GetSection("item21_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item21_nbsps"))@(Model.displayVar("item21_title"))
+	</OPTION>
+	}
+	@foreach (string _item22_menulink in Model.GetSection("item22_menulink", this)){
+	<OPTION @(Model.displayVar("item22_optionattrs")) @{foreach (string _item22_current in Model.GetSection("item22_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item22_nbsps"))@(Model.displayVar("item22_title"))
+	</OPTION>
+	}
+	@foreach (string _item23_menulink in Model.GetSection("item23_menulink", this)){
+	<OPTION @(Model.displayVar("item23_optionattrs")) @{foreach (string _item23_current in Model.GetSection("item23_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item23_nbsps"))@(Model.displayVar("item23_title"))
+	</OPTION>
+	}
+	@foreach (string _item24_menulink in Model.GetSection("item24_menulink", this)){
+	<OPTION @(Model.displayVar("item24_optionattrs")) @{foreach (string _item24_current in Model.GetSection("item24_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item24_nbsps"))@(Model.displayVar("item24_title"))
+	</OPTION>
+	}
+	@foreach (string _item25_menulink in Model.GetSection("item25_menulink", this)){
+	<OPTION @(Model.displayVar("item25_optionattrs")) @{foreach (string _item25_current in Model.GetSection("item25_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item25_nbsps"))@(Model.displayVar("item25_title"))
+	</OPTION>
+	}
+	@foreach (string _item26_menulink in Model.GetSection("item26_menulink", this)){
+	<OPTION @(Model.displayVar("item26_optionattrs")) @{foreach (string _item26_current in Model.GetSection("item26_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item26_nbsps"))@(Model.displayVar("item26_title"))
+	</OPTION>
+	}
+	@foreach (string _item27_menulink in Model.GetSection("item27_menulink", this)){
+	<OPTION @(Model.displayVar("item27_optionattrs")) @{foreach (string _item27_current in Model.GetSection("item27_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item27_nbsps"))@(Model.displayVar("item27_title"))
+	</OPTION>
+	}
+	@foreach (string _item28_menulink in Model.GetSection("item28_menulink", this)){
+	<OPTION @(Model.displayVar("item28_optionattrs")) @{foreach (string _item28_current in Model.GetSection("item28_current", this)){@MvcHtmlString.Create(@"selected")}}>
+		@(Model.displayVar("item28_nbsps"))@(Model.displayVar("item28_title"))
+	</OPTION>
+	}

@@ -1,0 +1,37 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = MVCFunctions.GetWebRootPath();
+}
+
+<UL class="rnr-b-vmenu simple @(Model.displayVar("menustyle"))">
+<LI class="@(Model.displayVar("item1_current")) menuLeaf">
+	<div>
+		<div>
+			<A @(Model.displayVar("item1_menulink_attrs"))>@(Model.displayVar("item1_title"))</a>
+		</div>
+	</div>
+</li>
+<LI class="@(Model.displayVar("item2_current")) menuLeaf">
+	<div>
+		<div>
+			<A @(Model.displayVar("item2_menulink_attrs"))>@(Model.displayVar("item2_title"))</a>
+		</div>
+	</div>
+</li>
+<LI class="@(Model.displayVar("item3_current")) menuLeaf">
+	<div>
+		<div>
+			<A @(Model.displayVar("item3_menulink_attrs"))>@(Model.displayVar("item3_title"))</a>
+		</div>
+	</div>
+</li>
+</ul>

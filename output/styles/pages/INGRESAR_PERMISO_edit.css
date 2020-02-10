@@ -1,0 +1,9 @@
+[data-cellid="grid_c3"][data-page="INGRESAR_PERMISO_edit"][data-cellid="grid_c3"][data-page="INGRESAR_PERMISO_edit"][data-cellid="grid_c3"][data-page="INGRESAR_PERMISO_edit"] {
+  width: 50%;
+}
+
+/* Put  your custom CSS code here */
+.container .jumbotron, .container-fluid .jumbotron {
+    width: 650px;
+}
+

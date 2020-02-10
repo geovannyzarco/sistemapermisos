@@ -1,0 +1,5 @@
+
+Runner.buttonEvents["Guia_de_Permisos"]=function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Guia_de_Permisos';if(!pageObj.buttonEventBefore['Guia_de_Permisos']){pageObj.buttonEventBefore['Guia_de_Permisos']=function(params,ctrl,pageObj,proxy,pageid,rowData,row){window.open("http://192.168.1.135/permisos/documentos/resumenpermisos.pdf","Guia Permisos","width=800, height=500")}}
+if(!pageObj.buttonEventAfter['Guia_de_Permisos']){pageObj.buttonEventAfter['Guia_de_Permisos']=function(result,ctrl,pageObj,proxy,pageid,rowData,row){}}
+$('a[id="Guia_de_Permisos"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="Guia_de_Permisos"+"_"+Runner.genId();var button_Guia_de_Permisos=new Runner.form.Button({id:this.id,btnName:"Guia_de_Permisos"});button_Guia_de_Permisos.init({args:[pageObj,proxy,pageid]});});};

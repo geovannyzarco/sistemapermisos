@@ -1,0 +1,302 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = MVCFunctions.GetWebRootPath();
+}
+
+@foreach (string _mainmenu_block in Model.GetSection("mainmenu_block", this)){
+	<UL class="rnr-b-vmenu tree @(Model.displayVar("menustyle"))" data-menuname="@(Model.displayVar("menuName"))">
+@foreach (string _menu_collapse_expand_all in Model.GetSection("menu_collapse_expand_all", this)){
+	<li class="manage">
+		<div>
+			<A href="#"><IMG alt="*" src="@(webRootPath)images/plus.gif" />
+				<span class=expand>Expandir todo</span>
+				<span class="hide" style="display:none;">Contraer todo</span>
+			</a>
+		</div>
+	</li>
+}
+
+	@foreach (string _item1_menulink in Model.GetSection("item1_menulink", this)){
+	<LI id="item1" class="@(Model.displayVar("item1_groupclass")) @(Model.displayVar("item1_current")) menuGroup" level=1>
+			<div>
+@foreach (string _item1_groupimage in Model.GetSection("item1_groupimage", this)){
+<span class="groupbox">
+<IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" />
+</span>
+}
+<A @(Model.displayVar("item1_menulink_attrs")) class="@(Model.displayVar("item1_current"))">@(Model.displayVar("item1_title"))</a>
+</div>
+
+	</li>
+	
+			foreach (string _item2_menulink in Model.GetSection("item2_menulink", this)){
+			<LI id="item2" style="display:none" class="subitem level2 @(Model.displayVar("item2_groupclass")) @(Model.displayVar("item2_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item2_menulink_attrs")) class="@(Model.displayVar("item2_current"))">@(Model.displayVar("item2_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item3_menulink in Model.GetSection("item3_menulink", this)){
+			<LI id="item3" style="display:none" class="subitem level2 @(Model.displayVar("item3_groupclass")) @(Model.displayVar("item3_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item3_menulink_attrs")) class="@(Model.displayVar("item3_current"))">@(Model.displayVar("item3_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item4_menulink in Model.GetSection("item4_menulink", this)){
+			<LI id="item4" style="display:none" class="subitem level2 @(Model.displayVar("item4_groupclass")) @(Model.displayVar("item4_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item4_menulink_attrs")) class="@(Model.displayVar("item4_current"))">@(Model.displayVar("item4_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item5_menulink in Model.GetSection("item5_menulink", this)){
+			<LI id="item5" style="display:none" class="subitem level2 @(Model.displayVar("item5_groupclass")) @(Model.displayVar("item5_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item5_menulink_attrs")) class="@(Model.displayVar("item5_current"))">@(Model.displayVar("item5_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item6_menulink in Model.GetSection("item6_menulink", this)){
+			<LI id="item6" style="display:none" class="subitem level2 @(Model.displayVar("item6_groupclass")) @(Model.displayVar("item6_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item6_menulink_attrs")) class="@(Model.displayVar("item6_current"))">@(Model.displayVar("item6_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item7_menulink in Model.GetSection("item7_menulink", this)){
+			<LI id="item7" style="display:none" class="subitem level2 @(Model.displayVar("item7_groupclass")) @(Model.displayVar("item7_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item7_menulink_attrs")) class="@(Model.displayVar("item7_current"))">@(Model.displayVar("item7_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item8_menulink in Model.GetSection("item8_menulink", this)){
+			<LI id="item8" style="display:none" class="subitem level2 @(Model.displayVar("item8_groupclass")) @(Model.displayVar("item8_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item8_menulink_attrs")) class="@(Model.displayVar("item8_current"))">@(Model.displayVar("item8_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item9_menulink in Model.GetSection("item9_menulink", this)){
+			<LI id="item9" style="display:none" class="subitem level2 @(Model.displayVar("item9_groupclass")) @(Model.displayVar("item9_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item9_menulink_attrs")) class="@(Model.displayVar("item9_current"))">@(Model.displayVar("item9_title"))</a>
+</div>
+
+			</li>
+			}
+	}
+
+	@foreach (string _item10_menulink in Model.GetSection("item10_menulink", this)){
+	<LI id="item10" class="@(Model.displayVar("item10_groupclass")) @(Model.displayVar("item10_current")) menuGroup" level=1>
+			<div>
+@foreach (string _item10_groupimage in Model.GetSection("item10_groupimage", this)){
+<span class="groupbox">
+<IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" />
+</span>
+}
+<A @(Model.displayVar("item10_menulink_attrs")) class="@(Model.displayVar("item10_current"))">@(Model.displayVar("item10_title"))</a>
+</div>
+
+	</li>
+	
+			foreach (string _item11_menulink in Model.GetSection("item11_menulink", this)){
+			<LI id="item11" style="display:none" class="subitem level2 @(Model.displayVar("item11_groupclass")) @(Model.displayVar("item11_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item11_menulink_attrs")) class="@(Model.displayVar("item11_current"))">@(Model.displayVar("item11_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item12_menulink in Model.GetSection("item12_menulink", this)){
+			<LI id="item12" style="display:none" class="subitem level2 @(Model.displayVar("item12_groupclass")) @(Model.displayVar("item12_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item12_menulink_attrs")) class="@(Model.displayVar("item12_current"))">@(Model.displayVar("item12_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item13_menulink in Model.GetSection("item13_menulink", this)){
+			<LI id="item13" style="display:none" class="subitem level2 @(Model.displayVar("item13_groupclass")) @(Model.displayVar("item13_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item13_menulink_attrs")) class="@(Model.displayVar("item13_current"))">@(Model.displayVar("item13_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item14_menulink in Model.GetSection("item14_menulink", this)){
+			<LI id="item14" style="display:none" class="subitem level2 @(Model.displayVar("item14_groupclass")) @(Model.displayVar("item14_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item14_menulink_attrs")) class="@(Model.displayVar("item14_current"))">@(Model.displayVar("item14_title"))</a>
+</div>
+
+			</li>
+			}
+	}
+
+	@foreach (string _item15_menulink in Model.GetSection("item15_menulink", this)){
+	<LI id="item15" class="@(Model.displayVar("item15_groupclass")) @(Model.displayVar("item15_current")) menuGroup" level=1>
+			<div>
+@foreach (string _item15_groupimage in Model.GetSection("item15_groupimage", this)){
+<span class="groupbox">
+<IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" />
+</span>
+}
+<A @(Model.displayVar("item15_menulink_attrs")) class="@(Model.displayVar("item15_current"))">@(Model.displayVar("item15_title"))</a>
+</div>
+
+	</li>
+	
+			foreach (string _item16_menulink in Model.GetSection("item16_menulink", this)){
+			<LI id="item16" style="display:none" class="subitem level2 @(Model.displayVar("item16_groupclass")) @(Model.displayVar("item16_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item16_menulink_attrs")) class="@(Model.displayVar("item16_current"))">@(Model.displayVar("item16_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item17_menulink in Model.GetSection("item17_menulink", this)){
+			<LI id="item17" style="display:none" class="subitem level2 @(Model.displayVar("item17_groupclass")) @(Model.displayVar("item17_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item17_menulink_attrs")) class="@(Model.displayVar("item17_current"))">@(Model.displayVar("item17_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item18_menulink in Model.GetSection("item18_menulink", this)){
+			<LI id="item18" style="display:none" class="subitem level2 @(Model.displayVar("item18_groupclass")) @(Model.displayVar("item18_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item18_menulink_attrs")) class="@(Model.displayVar("item18_current"))">@(Model.displayVar("item18_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item19_menulink in Model.GetSection("item19_menulink", this)){
+			<LI id="item19" style="display:none" class="subitem level2 @(Model.displayVar("item19_groupclass")) @(Model.displayVar("item19_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item19_menulink_attrs")) class="@(Model.displayVar("item19_current"))">@(Model.displayVar("item19_title"))</a>
+</div>
+
+			</li>
+			}
+	}
+
+	@foreach (string _item20_menulink in Model.GetSection("item20_menulink", this)){
+	<LI id="item20" class="@(Model.displayVar("item20_groupclass")) @(Model.displayVar("item20_current")) menuGroup" level=1>
+			<div>
+@foreach (string _item20_groupimage in Model.GetSection("item20_groupimage", this)){
+<span class="groupbox">
+<IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" />
+</span>
+}
+<A @(Model.displayVar("item20_menulink_attrs")) class="@(Model.displayVar("item20_current"))">@(Model.displayVar("item20_title"))</a>
+</div>
+
+	</li>
+	
+			foreach (string _item21_menulink in Model.GetSection("item21_menulink", this)){
+			<LI id="item21" style="display:none" class="subitem level2 @(Model.displayVar("item21_groupclass")) @(Model.displayVar("item21_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item21_menulink_attrs")) class="@(Model.displayVar("item21_current"))">@(Model.displayVar("item21_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item22_menulink in Model.GetSection("item22_menulink", this)){
+			<LI id="item22" style="display:none" class="subitem level2 @(Model.displayVar("item22_groupclass")) @(Model.displayVar("item22_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item22_menulink_attrs")) class="@(Model.displayVar("item22_current"))">@(Model.displayVar("item22_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item23_menulink in Model.GetSection("item23_menulink", this)){
+			<LI id="item23" style="display:none" class="subitem level2 @(Model.displayVar("item23_groupclass")) @(Model.displayVar("item23_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item23_menulink_attrs")) class="@(Model.displayVar("item23_current"))">@(Model.displayVar("item23_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item24_menulink in Model.GetSection("item24_menulink", this)){
+			<LI id="item24" style="display:none" class="subitem level2 @(Model.displayVar("item24_groupclass")) @(Model.displayVar("item24_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item24_menulink_attrs")) class="@(Model.displayVar("item24_current"))">@(Model.displayVar("item24_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item25_menulink in Model.GetSection("item25_menulink", this)){
+			<LI id="item25" style="display:none" class="subitem level2 @(Model.displayVar("item25_groupclass")) @(Model.displayVar("item25_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item25_menulink_attrs")) class="@(Model.displayVar("item25_current"))">@(Model.displayVar("item25_title"))</a>
+</div>
+
+			</li>
+			}
+	
+			foreach (string _item26_menulink in Model.GetSection("item26_menulink", this)){
+			<LI id="item26" style="display:none" class="subitem level2 @(Model.displayVar("item26_groupclass")) @(Model.displayVar("item26_current")) menuLeaf" level=2>
+					<div>
+<A @(Model.displayVar("item26_menulink_attrs")) class="@(Model.displayVar("item26_current"))">@(Model.displayVar("item26_title"))</a>
+</div>
+
+			</li>
+			}
+	}
+
+	@foreach (string _item27_menulink in Model.GetSection("item27_menulink", this)){
+	<LI id="item27" class="@(Model.displayVar("item27_groupclass")) @(Model.displayVar("item27_current")) menuLeaf" level=1>
+			<div>
+<A @(Model.displayVar("item27_menulink_attrs")) class="@(Model.displayVar("item27_current"))">@(Model.displayVar("item27_title"))</a>
+</div>
+
+	</li>
+	}
+
+	@foreach (string _item28_menulink in Model.GetSection("item28_menulink", this)){
+	<LI id="item28" class="@(Model.displayVar("item28_groupclass")) @(Model.displayVar("item28_current")) menuLeaf" level=1>
+			<div>
+<A @(Model.displayVar("item28_menulink_attrs")) class="@(Model.displayVar("item28_current"))">@(Model.displayVar("item28_title"))</a>
+</div>
+
+	</li>
+	}
+</ul>
+}
+
+

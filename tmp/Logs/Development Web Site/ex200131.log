@@ -1,0 +1,27 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2020-01-31 14:26:23
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2020-01-31 14:26:23 127.0.0.1 GET / - 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 200 0 0 47608
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2020-01-31 16:10:20
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2020-01-31 16:10:20 ::1 GET / - 8086 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 - 200 0 0 18755
+2020-01-31 16:10:20 127.0.0.1 GET / - 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 200 0 0 32716
+2020-01-31 16:10:20 ::1 GET /styles/pages/.global_login.css - 8086 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8086/ 200 0 0 34
+2020-01-31 16:10:20 ::1 GET /styles/font-awesome/css/font-awesome.min.css - 8086 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8086/ 200 0 64 83
+2020-01-31 16:10:20 ::1 GET /include/jquery-ui/smoothness/jquery-ui.min.css - 8086 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8086/ 200 0 0 86
+2020-01-31 16:10:20 ::1 GET /include/bootstrap/css/jquery.mCustomScrollbar.css - 8086 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8086/ 200 0 64 125
+2020-01-31 16:10:20 ::1 GET /include/lang/Spanish.js - 8086 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8086/ 200 0 0 45
+2020-01-31 16:10:20 ::1 GET /styles/bootstrap/default/small/style.css - 8086 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8086/ 200 0 0 371
+2020-01-31 16:10:20 ::1 GET /include/loadfirst.js - 8086 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8086/ 200 0 0 433
+2020-01-31 16:10:21 ::1 GET /include/runnerJS/RunnerAll.js - 8086 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8086/ 200 0 0 435
+2020-01-31 16:10:21 ::1 GET /include/runnerJS/events/globalevents.js - 8086 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8086/ 200 0 0 31
+2020-01-31 16:10:21 ::1 GET /include/ajaxsuggest.js - 8086 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8086/ 200 0 0 65
+2020-01-31 16:10:21 ::1 GET /favicon.ico - 8086 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 - 404 0 64 42
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2020-01-31 16:46:43
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2020-01-31 16:46:43 127.0.0.1 GET / - 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 200 0 0 28230

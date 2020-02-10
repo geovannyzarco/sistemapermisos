@@ -1,0 +1,280 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = MVCFunctions.GetWebRootPath();
+}
+
+<!doctype html>@(new HtmlString(MVCFunctions.GetBuferContentAndClearBufer()))
+<HTML @(Model.displayVar("html_attrs"))>
+	<head>
+		<META http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<META name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>@(Model.displayVar("pagetitle"))</title>
+
+		<META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<LINK REL="stylesheet" href="@(webRootPath)styles/default.css" type="text/css" />
+		@foreach (string _rtlCSS in Model.GetSection("rtlCSS", this)){
+		<LINK REL="stylesheet" href="@(webRootPath)styles/defaultRTL.css" type="text/css" />
+		}
+		@foreach (string _styleCSSFiles in Model.GetSection("styleCSSFiles", this)){
+		<LINK REL="stylesheet" href="@(webRootPath)@(Model.displayVar("stylepath"))" type="text/css" />
+		}
+	</head>
+
+	<BODY class="@(Model.displayVar("stylename")) function-search" @(Model.displayVar("bodyattrs"))>
+	@foreach (string _body in Model.GetSection("body", this)){
+		{Html.RenderSharedView("header");}
+		<style>@MvcHtmlString.Create(@"")@(Model.displayVar("containerCss"))@MvcHtmlString.Create(@"")</style>
+		
+		<div class="container r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							@foreach (string _top_block in Model.GetSection("top_block", this)){
+<DIV class="r-form" data-location="top" id="form_top_@(Model.displayVar("pageid"))" data-makeup="small" @(Model.displayVar("form_top")) data-pageid="@(Model.displayVar("pageid"))" data-v-width="6" data-v-margin="1">		
+	 
+		<div class="row">
+			 
+				<DIV data-cellId="top_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_top_c1")) class=" r-ori-vert			col-md-12
+	">
+	 
+		<H2 data-itemtype="search_header" data-itemid="search_header" @(Model.displayVar("item_search_header")) data-pageid="@(Model.displayVar("pageid"))">@(Model.displayVar("pagetitlelabel Saldo_Horas_Empleado search"))</h2>
+	</div>					</div>
+	</div>		
+}
+									@foreach (string _above_grid_block in Model.GetSection("above-grid_block", this)){
+<DIV class="r-form" data-location="above-grid" id="form_above-grid_@(Model.displayVar("pageid"))" data-makeup="small" @(Model.displayVar("form_above-grid")) data-pageid="@(Model.displayVar("pageid"))" data-v-width="6" data-v-margin="1">		
+	</div>		
+}
+									@foreach (string _grid_block in Model.GetSection("grid_block", this)){
+
+
+
+
+ 
+	 
+												<TABLE data-body-align="center" data-location="grid" id="form_grid_@(Model.displayVar("pageid"))" data-makeup="small" @(Model.displayVar("form_grid")) data-pageid="@(Model.displayVar("pageid"))" class="r-edit-form" cellpadding="0" cellspacing="0" @(Model.displayVar("grid_hiddenattr")) data-form-width="1" data-v-width="6">
+	<tbody>
+										<tr>
+										
+
+@foreach (string _cellblock_grid_c3 in Model.GetSection("cellblock_grid_c3", this)){
+<TD @(Model.displayVar("cell_grid_c3")) class=" r-ori-vert" data-fullwidth data-cellId="grid_c3" data-pageid="@(Model.displayVar("pageid"))" data-v-cell="6">
+	<div edit-form-cell class="clearfix">
+				
+@foreach (string _ONI_fieldblock in Model.GetSection("ONI_fieldblock", this)){
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_ONI"))  r-horizontal-field form-horizontal" data-fieldname="ONI" data-signal-error-for="ONI@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field" @(Model.displayVar("item_integrated_search_field")) data-pageid="@(Model.displayVar("pageid"))" data-field="ONI">
+
+
+	<LABEL class="r-search-label control-label" for="@(Model.displayVar("labelfor_ONI"))">
+		@(Model.displayVar("label Saldo_Horas_Empleado ONI"))	</label>
+	<div class="r-search-option">
+		@(Model.displayVar("searchtype_ONI"))
+	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("ONI_editcontrol"))	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("ONI_editcontrol1"))
+	</div>
+	
+</div>
+
+}
+											
+@foreach (string _nombre_fieldblock in Model.GetSection("nombre_fieldblock", this)){
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_nombre"))  r-horizontal-field form-horizontal" data-fieldname="nombre" data-signal-error-for="nombre@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" @(Model.displayVar("item_integrated_search_field1")) data-pageid="@(Model.displayVar("pageid"))" data-field="nombre">
+
+
+	<LABEL class="r-search-label control-label" for="@(Model.displayVar("labelfor_nombre"))">
+		@(Model.displayVar("label Saldo_Horas_Empleado nombre"))	</label>
+	<div class="r-search-option">
+		@(Model.displayVar("searchtype_nombre"))
+	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("nombre_editcontrol"))	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("nombre_editcontrol1"))
+	</div>
+	
+</div>
+
+}
+											
+@foreach (string _Horas_personales_tomadas_fieldblock in Model.GetSection("Horas_personales_tomadas_fieldblock", this)){
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_Horas_personales_tomadas"))  r-horizontal-field form-horizontal" data-fieldname="Horas_personales_tomadas" data-signal-error-for="Horas_personales_tomadas@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" @(Model.displayVar("item_integrated_search_field2")) data-pageid="@(Model.displayVar("pageid"))" data-field="Horas_personales_tomadas">
+
+
+	<LABEL class="r-search-label control-label" for="@(Model.displayVar("labelfor_Horas_personales_tomadas"))">
+		@(Model.displayVar("label Saldo_Horas_Empleado Horas_personales_tomadas"))	</label>
+	<div class="r-search-option">
+		@(Model.displayVar("searchtype_Horas_personales_tomadas"))
+	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("Horas_personales_tomadas_editcontrol"))	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("Horas_personales_tomadas_editcontrol1"))
+	</div>
+	
+</div>
+
+}
+											
+@foreach (string _Horas_personales_asignadas_fieldblock in Model.GetSection("Horas_personales_asignadas_fieldblock", this)){
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_Horas_personales_asignadas"))  r-horizontal-field form-horizontal" data-fieldname="Horas_personales_asignadas" data-signal-error-for="Horas_personales_asignadas@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" @(Model.displayVar("item_integrated_search_field3")) data-pageid="@(Model.displayVar("pageid"))" data-field="Horas_personales_asignadas">
+
+
+	<LABEL class="r-search-label control-label" for="@(Model.displayVar("labelfor_Horas_personales_asignadas"))">
+		@(Model.displayVar("label Saldo_Horas_Empleado Horas_personales_asignadas"))	</label>
+	<div class="r-search-option">
+		@(Model.displayVar("searchtype_Horas_personales_asignadas"))
+	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("Horas_personales_asignadas_editcontrol"))	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("Horas_personales_asignadas_editcontrol1"))
+	</div>
+	
+</div>
+
+}
+											
+@foreach (string _Horas_compesadas_disponible_fieldblock in Model.GetSection("Horas_compesadas_disponible_fieldblock", this)){
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_Horas_compesadas_disponible"))  r-horizontal-field form-horizontal" data-fieldname="Horas_compesadas_disponible" data-signal-error-for="Horas_compesadas_disponible@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" @(Model.displayVar("item_integrated_search_field4")) data-pageid="@(Model.displayVar("pageid"))" data-field="Horas_compesadas_disponible">
+
+
+	<LABEL class="r-search-label control-label" for="@(Model.displayVar("labelfor_Horas_compesadas_disponible"))">
+		@(Model.displayVar("label Saldo_Horas_Empleado Horas_compesadas_disponible"))	</label>
+	<div class="r-search-option">
+		@(Model.displayVar("searchtype_Horas_compesadas_disponible"))
+	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("Horas_compesadas_disponible_editcontrol"))	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("Horas_compesadas_disponible_editcontrol1"))
+	</div>
+	
+</div>
+
+}
+											
+@foreach (string _tipo_empleado_fieldblock in Model.GetSection("tipo_empleado_fieldblock", this)){
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_tipo_empleado"))  r-horizontal-field form-horizontal" data-fieldname="tipo_empleado" data-signal-error-for="tipo_empleado@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" @(Model.displayVar("item_integrated_search_field5")) data-pageid="@(Model.displayVar("pageid"))" data-field="tipo_empleado">
+
+
+	<LABEL class="r-search-label control-label" for="@(Model.displayVar("labelfor_tipo_empleado"))">
+		@(Model.displayVar("label Saldo_Horas_Empleado tipo_empleado"))	</label>
+	<div class="r-search-option">
+		@(Model.displayVar("searchtype_tipo_empleado"))
+	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("tipo_empleado_editcontrol"))	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("tipo_empleado_editcontrol1"))
+	</div>
+	
+</div>
+
+}
+											
+@foreach (string _horarios_fieldblock in Model.GetSection("horarios_fieldblock", this)){
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_horarios"))  r-horizontal-field form-horizontal" data-fieldname="horarios" data-signal-error-for="horarios@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" @(Model.displayVar("item_integrated_search_field6")) data-pageid="@(Model.displayVar("pageid"))" data-field="horarios">
+
+
+	<LABEL class="r-search-label control-label" for="@(Model.displayVar("labelfor_horarios"))">
+		@(Model.displayVar("label Saldo_Horas_Empleado horarios"))	</label>
+	<div class="r-search-option">
+		@(Model.displayVar("searchtype_horarios"))
+	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("horarios_editcontrol"))	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("horarios_editcontrol1"))
+	</div>
+	
+</div>
+
+}
+											
+@foreach (string _departamento_fieldblock in Model.GetSection("departamento_fieldblock", this)){
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_departamento"))  r-horizontal-field form-horizontal" data-fieldname="departamento" data-signal-error-for="departamento@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" @(Model.displayVar("item_integrated_search_field7")) data-pageid="@(Model.displayVar("pageid"))" data-field="departamento">
+
+
+	<LABEL class="r-search-label control-label" for="@(Model.displayVar("labelfor_departamento"))">
+		@(Model.displayVar("label Saldo_Horas_Empleado departamento"))	</label>
+	<div class="r-search-option">
+		@(Model.displayVar("searchtype_departamento"))
+	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("departamento_editcontrol"))	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("departamento_editcontrol1"))
+	</div>
+	
+</div>
+
+}
+	
+								</td>
+			}
+								</tr>
+			</tbody></table>
+}
+									@foreach (string _below_grid_block in Model.GetSection("below-grid_block", this)){
+<DIV class="r-form" data-location="below-grid" id="form_below-grid_@(Model.displayVar("pageid"))" data-makeup="small" @(Model.displayVar("form_below-grid")) data-pageid="@(Model.displayVar("pageid"))" data-v-width="6" data-v-margin="1">		
+	 
+		<div class="row">
+			 
+				<DIV data-cellId="below-grid_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_below-grid_c1")) class="			col-md-12
+	">
+	 
+		<SPAN data-itemtype="search_search" data-itemid="search_search" @(Model.displayVar("item_search_search")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+	<A type="button" title class="btn btn-primary   
+	" @(Model.displayVar("searchbutton_attrs"))>
+							Buscar			</a>
+</span>
+	 
+		<SPAN data-itemtype="search_reset" data-itemid="search_reset" @(Model.displayVar("item_search_reset")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+	<A type="button" title class="btn btn-default   
+	" @(Model.displayVar("resetbutton_attrs"))>
+							Reiniciar			</a>
+</span>
+	 
+		@foreach (string _back_button in Model.GetSection("back_button", this)){
+<SPAN data-itemtype="search_back_list" data-itemid="search_back_list" @(Model.displayVar("item_search_back_list")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+	<A type="button" title class="btn btn-default   
+	" @(Model.displayVar("backbutton_attrs"))>
+							Volver a la lista			</a>
+</span>
+}
+	 
+		@foreach (string _cancel_button in Model.GetSection("cancel_button", this)){
+<SPAN data-itemtype="search_cancel" data-itemid="search_cancel" @(Model.displayVar("item_search_cancel")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+	<A type="button" title class="btn btn-default   
+	" id="cancelButton@(Model.displayVar("id"))">
+							Cancelar			</a>
+</span>
+}
+	</div>					</div>
+	</div>		
+}
+			</div>
+		{Html.RenderSharedView("footer");}
+	}
+	</body>
+</html>

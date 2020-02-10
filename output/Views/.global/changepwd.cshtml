@@ -1,0 +1,163 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = MVCFunctions.GetWebRootPath();
+}
+
+<!doctype html>@(new HtmlString(MVCFunctions.GetBuferContentAndClearBufer()))
+<HTML @(Model.displayVar("html_attrs"))>
+  <head>
+    <META http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <META name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      @(Model.displayVar("pagetitle"))
+    </title>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <LINK REL="stylesheet" href="@(webRootPath)styles/default.css" type="text/css" />
+    @foreach (string _rtlCSS in Model.GetSection("rtlCSS", this)){
+      <LINK REL="stylesheet" href="@(webRootPath)styles/defaultRTL.css" type="text/css" />
+    }
+    @foreach (string _styleCSSFiles in Model.GetSection("styleCSSFiles", this)){
+      <LINK REL="stylesheet" href="@(webRootPath)@(Model.displayVar("stylepath"))" type="text/css" />
+    }
+  </head>
+  <BODY class="@(Model.displayVar("stylename")) function-changepwd" @(Model.displayVar("bodyattrs"))>
+    @foreach (string _body in Model.GetSection("body", this)){
+      {Html.RenderSharedView("header");}
+      <style>@MvcHtmlString.Create(@"")@(Model.displayVar("containerCss"))@MvcHtmlString.Create(@"")</style>
+      <DIV class="r-panel-page">
+        @foreach (string _supertop_block in Model.GetSection("supertop_block", this)){
+          <DIV class="r-form" data-location="supertop" id="form_supertop_@(Model.displayVar("pageid"))" data-makeup="panel" @(Model.displayVar("form_supertop")) data-pageid="@(Model.displayVar("pageid"))">
+            <DIV class="row">
+              <DIV data-cellId="supertop_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_supertop_c1")) class="r-align-center r-ori-vert col-md-12">
+              </div>
+            </div>
+          </div>
+        }
+        <DIV class="bs-pagepanel panel panel-primary">
+          <DIV class="panel-heading">
+            @foreach (string _top_block in Model.GetSection("top_block", this)){
+              <DIV class="panel-title r-panel-top row" data-location="top" id="form_top_@(Model.displayVar("pageid"))" data-makeup="panel" @(Model.displayVar("form_top")) data-pageid="@(Model.displayVar("pageid"))">
+                <DIV data-cellId="top_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_top_c1")) class="r-ori-vert col-md-12">
+                  <H3 class="panel-title" data-itemtype="changepwd_header" data-itemid="changepwd_header" @(Model.displayVar("item_changepwd_header")) data-pageid="@(Model.displayVar("pageid"))">
+                    @(Model.displayVar("pagetitlelabel changepwd"))
+                  </h3>
+                </div>
+              </div>
+            }
+          </div>
+          <DIV class="panel-body">
+            @foreach (string _above_grid_block in Model.GetSection("above-grid_block", this)){
+              <DIV class="r-form" data-location="above-grid" id="form_above-grid_@(Model.displayVar("pageid"))" data-makeup="panel" @(Model.displayVar("form_above-grid")) data-pageid="@(Model.displayVar("pageid"))">
+                <DIV class="row">
+                  <DIV data-cellId="above-grid_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_above-grid_c1")) class="r-ori-vert col-md-12">
+                    @foreach (string _firstAboveGridCell in Model.GetSection("firstAboveGridCell", this)){
+                      foreach (string _message_block in Model.GetSection("message_block", this)){
+                        <DIV data-itemtype="changepwd_message" data-itemid="changepwd_message" @(Model.displayVar("item_changepwd_message")) data-pageid="@(Model.displayVar("pageid"))" class="alert @(Model.displayVar("message_class"))" role="alert">
+                          @(Model.displayVar("message"))
+                        </div>
+                      }
+                    }
+                  </div>
+                </div>
+              </div>
+            }
+            @foreach (string _grid_block in Model.GetSection("grid_block", this)){
+              <TABLE class="r-edit-form r-panel-form" cellpadding="0" cellspacing="0" data-location="grid" id="form_grid_@(Model.displayVar("pageid"))" data-makeup="panel" @(Model.displayVar("form_grid")) data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("grid_hiddenattr")) data-form-width>
+                <tbody>
+                  <tr>
+                    <TD class="r-align-right r-ori-vert col-md-4" data-single data-cellId="grid_c1" data-pageid="@(Model.displayVar("pageid"))">
+                      <DIV edit-form-cell class="clearfix">
+                        <LABEL data-itemtype="oldpass_label" data-itemid="oldpass_label" @(Model.displayVar("item_oldpass_label")) data-pageid="@(Model.displayVar("pageid"))" data-small class="r-edit-label control-label" for="@(Model.displayVar("labelfor_oldpass"))">
+                          @foreach (string _oldpass_label in Model.GetSection("oldpass_label", this)){<text>
+                            Antigua contraseña:
+                          </text>}
+                        </label>
+                      </div>
+                    </td>
+                    <TD class="r-ori-vert col-md-6" data-single data-cellId="grid_c2" data-pageid="@(Model.displayVar("pageid"))">
+                      <DIV edit-form-cell class="clearfix">
+                        <DIV class="r-edit-field" data-itemtype="oldpass" data-itemid="oldpass" @(Model.displayVar("item_oldpass")) data-pageid="@(Model.displayVar("pageid"))">
+                          @(Model.displayVar("oldpass_editcontrol"))
+                        </div>
+                      </div>
+                    </td>
+                    <TD class="col-md-2">
+                    </td>
+                  </tr>
+                  <tr>
+                    <TD class="r-align-right r-ori-vert col-md-4" data-single data-cellId="grid_c3" data-pageid="@(Model.displayVar("pageid"))">
+                      <DIV edit-form-cell class="clearfix">
+                        <LABEL data-itemtype="newpass_label" data-itemid="newpass_label" @(Model.displayVar("item_newpass_label")) data-pageid="@(Model.displayVar("pageid"))" data-small class="r-edit-label control-label" for="@(Model.displayVar("labelfor_newpass"))">
+                          @foreach (string _newpass_label in Model.GetSection("newpass_label", this)){<text>
+                            Nueva contraseña:
+                          </text>}
+                        </label>
+                      </div>
+                    </td>
+                    <TD class="r-ori-vert col-md-6" data-single data-cellId="grid_c4" data-pageid="@(Model.displayVar("pageid"))">
+                      <DIV edit-form-cell class="clearfix">
+                        <DIV class="r-edit-field" data-itemtype="newpass" data-itemid="newpass" @(Model.displayVar("item_newpass")) data-pageid="@(Model.displayVar("pageid"))">
+                          @(Model.displayVar("newpass_editcontrol"))
+                        </div>
+                      </div>
+                    </td>
+                    <TD class="col-md-2">
+                    </td>
+                  </tr>
+                  <tr>
+                    <TD class="r-align-right r-ori-vert col-md-4" data-single data-cellId="grid_c5" data-pageid="@(Model.displayVar("pageid"))">
+                      <DIV edit-form-cell class="clearfix">
+                        <LABEL data-itemtype="confirm_label" data-itemid="confirm_label" @(Model.displayVar("item_confirm_label")) data-pageid="@(Model.displayVar("pageid"))" data-small class="r-edit-label control-label" for="@(Model.displayVar("labelfor_confirm"))">
+                          @foreach (string _confirm_label in Model.GetSection("confirm_label", this)){<text>
+                            Confirme su contraseña:
+                          </text>}
+                        </label>
+                      </div>
+                    </td>
+                    <TD class="r-ori-vert col-md-6" data-single data-cellId="grid_c6" data-pageid="@(Model.displayVar("pageid"))">
+                      <DIV edit-form-cell class="clearfix">
+                        <DIV class="r-edit-field" data-itemtype="confirm" data-itemid="confirm" @(Model.displayVar("item_confirm")) data-pageid="@(Model.displayVar("pageid"))">
+                          @(Model.displayVar("confirm_editcontrol"))
+                        </div>
+                      </div>
+                    </td>
+                    <TD class="col-md-2">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            }
+            @foreach (string _footer_block in Model.GetSection("footer_block", this)){
+              <DIV class="r-form" data-location="footer" id="form_footer_@(Model.displayVar("pageid"))" data-makeup="panel" @(Model.displayVar("form_footer")) data-pageid="@(Model.displayVar("pageid"))">
+                <DIV class="row">
+                  <DIV data-cellId="footer_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_footer_c1")) class="r-align-center col-md-12">
+                    <SPAN data-itemtype="changepwd_button" data-itemid="changepwd_button" @(Model.displayVar("item_changepwd_button")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+                      <A type="button" title class="btn btn-primary" @(Model.displayVar("submit_attrs"))>
+                        Cambiar
+                      </a>
+                    </span>
+                    <SPAN data-itemtype="changepwd_back" data-itemid="changepwd_back" @(Model.displayVar("item_changepwd_back")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+                      <A type="button" title class="btn btn-link" @(Model.displayVar("backlink_attrs"))>
+                        Regresar
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+      {Html.RenderSharedView("footer");}
+    }
+  </body>
+</html>

@@ -1,0 +1,368 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = MVCFunctions.GetWebRootPath();
+}
+
+
+@foreach (string _item1_menulink in Model.GetSection("item1_menulink", this)){
+<DIV id="item1" class="rnr-b-hmenu @(Model.displayVar("menustyle")) Group @(Model.displayVar("item1_current"))">
+	<span class="rnr-hseparator"></span><div>
+<A @(Model.displayVar("item1_menulink_attrs"))>@(Model.displayVar("item1_title"))</a></div>
+
+
+
+		<ul>
+		
+		@foreach (string _item2_menulink in Model.GetSection("item2_menulink", this)){
+		<LI parent="group1" class="Leaf @(Model.displayVar("item2_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item2_menulink_attrs"))>@(Model.displayVar("item2_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item3_menulink in Model.GetSection("item3_menulink", this)){
+		<LI parent="group1" class="Leaf @(Model.displayVar("item3_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item3_menulink_attrs"))>@(Model.displayVar("item3_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item4_menulink in Model.GetSection("item4_menulink", this)){
+		<LI parent="group1" class="Leaf @(Model.displayVar("item4_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item4_menulink_attrs"))>@(Model.displayVar("item4_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item5_menulink in Model.GetSection("item5_menulink", this)){
+		<LI parent="group1" class="Leaf @(Model.displayVar("item5_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item5_menulink_attrs"))>@(Model.displayVar("item5_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item6_menulink in Model.GetSection("item6_menulink", this)){
+		<LI parent="group1" class="Leaf @(Model.displayVar("item6_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item6_menulink_attrs"))>@(Model.displayVar("item6_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item7_menulink in Model.GetSection("item7_menulink", this)){
+		<LI parent="group1" class="Leaf @(Model.displayVar("item7_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item7_menulink_attrs"))>@(Model.displayVar("item7_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item8_menulink in Model.GetSection("item8_menulink", this)){
+		<LI parent="group1" class="Leaf @(Model.displayVar("item8_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item8_menulink_attrs"))>@(Model.displayVar("item8_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item9_menulink in Model.GetSection("item9_menulink", this)){
+		<LI parent="group1" class="Leaf @(Model.displayVar("item9_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item9_menulink_attrs"))>@(Model.displayVar("item9_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+		</ul>
+</div>
+}
+
+@foreach (string _item10_menulink in Model.GetSection("item10_menulink", this)){
+<DIV id="item10" class="rnr-b-hmenu @(Model.displayVar("menustyle")) Group @(Model.displayVar("item10_current"))">
+	<span class="rnr-hseparator"></span><div>
+<A @(Model.displayVar("item10_menulink_attrs"))>@(Model.displayVar("item10_title"))</a></div>
+
+
+
+		<ul>
+		
+		@foreach (string _item11_menulink in Model.GetSection("item11_menulink", this)){
+		<LI parent="group10" class="Leaf @(Model.displayVar("item11_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item11_menulink_attrs"))>@(Model.displayVar("item11_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item12_menulink in Model.GetSection("item12_menulink", this)){
+		<LI parent="group10" class="Leaf @(Model.displayVar("item12_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item12_menulink_attrs"))>@(Model.displayVar("item12_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item13_menulink in Model.GetSection("item13_menulink", this)){
+		<LI parent="group10" class="Leaf @(Model.displayVar("item13_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item13_menulink_attrs"))>@(Model.displayVar("item13_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item14_menulink in Model.GetSection("item14_menulink", this)){
+		<LI parent="group10" class="Leaf @(Model.displayVar("item14_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item14_menulink_attrs"))>@(Model.displayVar("item14_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+		</ul>
+</div>
+}
+
+@foreach (string _item15_menulink in Model.GetSection("item15_menulink", this)){
+<DIV id="item15" class="rnr-b-hmenu @(Model.displayVar("menustyle")) Group @(Model.displayVar("item15_current"))">
+	<span class="rnr-hseparator"></span><div>
+<A @(Model.displayVar("item15_menulink_attrs"))>@(Model.displayVar("item15_title"))</a></div>
+
+
+
+		<ul>
+		
+		@foreach (string _item16_menulink in Model.GetSection("item16_menulink", this)){
+		<LI parent="group15" class="Leaf @(Model.displayVar("item16_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item16_menulink_attrs"))>@(Model.displayVar("item16_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item17_menulink in Model.GetSection("item17_menulink", this)){
+		<LI parent="group15" class="Leaf @(Model.displayVar("item17_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item17_menulink_attrs"))>@(Model.displayVar("item17_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item18_menulink in Model.GetSection("item18_menulink", this)){
+		<LI parent="group15" class="Leaf @(Model.displayVar("item18_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item18_menulink_attrs"))>@(Model.displayVar("item18_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item19_menulink in Model.GetSection("item19_menulink", this)){
+		<LI parent="group15" class="Leaf @(Model.displayVar("item19_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item19_menulink_attrs"))>@(Model.displayVar("item19_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+		</ul>
+</div>
+}
+
+@foreach (string _item20_menulink in Model.GetSection("item20_menulink", this)){
+<DIV id="item20" class="rnr-b-hmenu @(Model.displayVar("menustyle")) Group @(Model.displayVar("item20_current"))">
+	<span class="rnr-hseparator"></span><div>
+<A @(Model.displayVar("item20_menulink_attrs"))>@(Model.displayVar("item20_title"))</a></div>
+
+
+
+		<ul>
+		
+		@foreach (string _item21_menulink in Model.GetSection("item21_menulink", this)){
+		<LI parent="group20" class="Leaf @(Model.displayVar("item21_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item21_menulink_attrs"))>@(Model.displayVar("item21_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item22_menulink in Model.GetSection("item22_menulink", this)){
+		<LI parent="group20" class="Leaf @(Model.displayVar("item22_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item22_menulink_attrs"))>@(Model.displayVar("item22_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item23_menulink in Model.GetSection("item23_menulink", this)){
+		<LI parent="group20" class="Leaf @(Model.displayVar("item23_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item23_menulink_attrs"))>@(Model.displayVar("item23_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item24_menulink in Model.GetSection("item24_menulink", this)){
+		<LI parent="group20" class="Leaf @(Model.displayVar("item24_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item24_menulink_attrs"))>@(Model.displayVar("item24_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item25_menulink in Model.GetSection("item25_menulink", this)){
+		<LI parent="group20" class="Leaf @(Model.displayVar("item25_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item25_menulink_attrs"))>@(Model.displayVar("item25_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+				
+		@foreach (string _item26_menulink in Model.GetSection("item26_menulink", this)){
+		<LI parent="group20" class="Leaf @(Model.displayVar("item26_current")) menuLeaf">
+			<div>
+<div>
+<A @(Model.displayVar("item26_menulink_attrs"))>@(Model.displayVar("item26_title"))</a>
+</div>
+</div>
+
+
+
+		</li>
+		}
+		</ul>
+</div>
+}
+
+@foreach (string _item27_menulink in Model.GetSection("item27_menulink", this)){
+<DIV id="item27" class="rnr-b-hmenu @(Model.displayVar("menustyle")) Leaf @(Model.displayVar("item27_current"))">
+	<span class="rnr-hseparator"></span><div>
+<A @(Model.displayVar("item27_menulink_attrs"))>@(Model.displayVar("item27_title"))</a></div>
+
+
+
+</div>
+}
+
+@foreach (string _item28_menulink in Model.GetSection("item28_menulink", this)){
+<DIV id="item28" class="rnr-b-hmenu @(Model.displayVar("menustyle")) Leaf @(Model.displayVar("item28_current"))">
+	<span class="rnr-hseparator"></span><div>
+<A @(Model.displayVar("item28_menulink_attrs"))>@(Model.displayVar("item28_title"))</a></div>
+
+
+
+</div>
+}

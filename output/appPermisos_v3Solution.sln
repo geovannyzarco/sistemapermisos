@@ -1,0 +1,14 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{{64FFBE60-C56A-4f53-85EF-829D7A32391C}}") = "appPermisos_v3", "appPermisos_v3.csproj", "{64FFBE60-C56A-4F53-85EF-829D7A32391C}"
+EndProject
+Project("{{64FFBE60-C56A-4f53-85EF-829D7A32391D}}") = "appPermisos_v3EventsCS", "appPermisos_v3EventsCS.csproj", "{64FFBE60-C56A-4F53-85EF-829D7A32391C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64FFBE60-C56A-4F53-85EF-829D7A32391C} = {64FFBE60-C56A-4F53-85EF-829D7A32391C}
+	EndProjectSection
+EndProject
+Project("{{64FFBE60-C56A-4f53-85EF-829D7A32391E}}") = "appPermisos_v3EventsVB", "appPermisos_v3EventsVB.vbproj", "{64FFBE60-C56A-4F53-85EF-829D7A32391C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64FFBE60-C56A-4F53-85EF-829D7A32391C} = {64FFBE60-C56A-4F53-85EF-829D7A32391C}
+	EndProjectSection
+EndProject

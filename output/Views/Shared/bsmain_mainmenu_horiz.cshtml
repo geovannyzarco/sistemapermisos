@@ -1,0 +1,221 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = MVCFunctions.GetWebRootPath();
+}
+
+<ul class="nav navbar-nav">
+	@(Model.displayVar("active_submenu"))
+	
+	@foreach (string _item1_menulink in Model.GetSection("item1_menulink", this)){
+	<LI class="  dropdown  @(Model.displayVar("item1_current"))">
+		<A @(Model.displayVar("item1_menulink_attrs"))>@(Model.displayVar("item1_title"))</a>
+
+				<ul class="dropdown-menu">
+		
+			@foreach (string _item2_menulink in Model.GetSection("item2_menulink", this)){
+			<LI class="  @(Model.displayVar("item2_current"))">
+				<A @(Model.displayVar("item2_menulink_attrs"))>@(Model.displayVar("item2_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item3_menulink in Model.GetSection("item3_menulink", this)){
+			<LI class="  @(Model.displayVar("item3_current"))">
+				<A @(Model.displayVar("item3_menulink_attrs"))>@(Model.displayVar("item3_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item4_menulink in Model.GetSection("item4_menulink", this)){
+			<LI class="  @(Model.displayVar("item4_current"))">
+				<A @(Model.displayVar("item4_menulink_attrs"))>@(Model.displayVar("item4_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item5_menulink in Model.GetSection("item5_menulink", this)){
+			<LI class="  @(Model.displayVar("item5_current"))">
+				<A @(Model.displayVar("item5_menulink_attrs"))>@(Model.displayVar("item5_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item6_menulink in Model.GetSection("item6_menulink", this)){
+			<LI class="  @(Model.displayVar("item6_current"))">
+				<A @(Model.displayVar("item6_menulink_attrs"))>@(Model.displayVar("item6_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item7_menulink in Model.GetSection("item7_menulink", this)){
+			<LI class="  @(Model.displayVar("item7_current"))">
+				<A @(Model.displayVar("item7_menulink_attrs"))>@(Model.displayVar("item7_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item8_menulink in Model.GetSection("item8_menulink", this)){
+			<LI class="  @(Model.displayVar("item8_current"))">
+				<A @(Model.displayVar("item8_menulink_attrs"))>@(Model.displayVar("item8_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item9_menulink in Model.GetSection("item9_menulink", this)){
+			<LI class="  @(Model.displayVar("item9_current"))">
+				<A @(Model.displayVar("item9_menulink_attrs"))>@(Model.displayVar("item9_title"))</a>
+
+			</li>
+			}
+				</ul>
+	</li>
+	}
+	
+	@foreach (string _item10_menulink in Model.GetSection("item10_menulink", this)){
+	<LI class="  dropdown  @(Model.displayVar("item10_current"))">
+		<A @(Model.displayVar("item10_menulink_attrs"))>@(Model.displayVar("item10_title"))</a>
+
+				<ul class="dropdown-menu">
+		
+			@foreach (string _item11_menulink in Model.GetSection("item11_menulink", this)){
+			<LI class="  @(Model.displayVar("item11_current"))">
+				<A @(Model.displayVar("item11_menulink_attrs"))>@(Model.displayVar("item11_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item12_menulink in Model.GetSection("item12_menulink", this)){
+			<LI class="  @(Model.displayVar("item12_current"))">
+				<A @(Model.displayVar("item12_menulink_attrs"))>@(Model.displayVar("item12_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item13_menulink in Model.GetSection("item13_menulink", this)){
+			<LI class="  @(Model.displayVar("item13_current"))">
+				<A @(Model.displayVar("item13_menulink_attrs"))>@(Model.displayVar("item13_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item14_menulink in Model.GetSection("item14_menulink", this)){
+			<LI class="  @(Model.displayVar("item14_current"))">
+				<A @(Model.displayVar("item14_menulink_attrs"))>@(Model.displayVar("item14_title"))</a>
+
+			</li>
+			}
+				</ul>
+	</li>
+	}
+	
+	@foreach (string _item15_menulink in Model.GetSection("item15_menulink", this)){
+	<LI class="  dropdown  @(Model.displayVar("item15_current"))">
+		<A @(Model.displayVar("item15_menulink_attrs"))>@(Model.displayVar("item15_title"))</a>
+
+				<ul class="dropdown-menu">
+		
+			@foreach (string _item16_menulink in Model.GetSection("item16_menulink", this)){
+			<LI class="  @(Model.displayVar("item16_current"))">
+				<A @(Model.displayVar("item16_menulink_attrs"))>@(Model.displayVar("item16_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item17_menulink in Model.GetSection("item17_menulink", this)){
+			<LI class="  @(Model.displayVar("item17_current"))">
+				<A @(Model.displayVar("item17_menulink_attrs"))>@(Model.displayVar("item17_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item18_menulink in Model.GetSection("item18_menulink", this)){
+			<LI class="  @(Model.displayVar("item18_current"))">
+				<A @(Model.displayVar("item18_menulink_attrs"))>@(Model.displayVar("item18_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item19_menulink in Model.GetSection("item19_menulink", this)){
+			<LI class="  @(Model.displayVar("item19_current"))">
+				<A @(Model.displayVar("item19_menulink_attrs"))>@(Model.displayVar("item19_title"))</a>
+
+			</li>
+			}
+				</ul>
+	</li>
+	}
+	
+	@foreach (string _item20_menulink in Model.GetSection("item20_menulink", this)){
+	<LI class="  dropdown  @(Model.displayVar("item20_current"))">
+		<A @(Model.displayVar("item20_menulink_attrs"))>@(Model.displayVar("item20_title"))</a>
+
+				<ul class="dropdown-menu">
+		
+			@foreach (string _item21_menulink in Model.GetSection("item21_menulink", this)){
+			<LI class="  @(Model.displayVar("item21_current"))">
+				<A @(Model.displayVar("item21_menulink_attrs"))>@(Model.displayVar("item21_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item22_menulink in Model.GetSection("item22_menulink", this)){
+			<LI class="  @(Model.displayVar("item22_current"))">
+				<A @(Model.displayVar("item22_menulink_attrs"))>@(Model.displayVar("item22_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item23_menulink in Model.GetSection("item23_menulink", this)){
+			<LI class="  @(Model.displayVar("item23_current"))">
+				<A @(Model.displayVar("item23_menulink_attrs"))>@(Model.displayVar("item23_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item24_menulink in Model.GetSection("item24_menulink", this)){
+			<LI class="  @(Model.displayVar("item24_current"))">
+				<A @(Model.displayVar("item24_menulink_attrs"))>@(Model.displayVar("item24_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item25_menulink in Model.GetSection("item25_menulink", this)){
+			<LI class="  @(Model.displayVar("item25_current"))">
+				<A @(Model.displayVar("item25_menulink_attrs"))>@(Model.displayVar("item25_title"))</a>
+
+			</li>
+			}
+						
+			@foreach (string _item26_menulink in Model.GetSection("item26_menulink", this)){
+			<LI class="  @(Model.displayVar("item26_current"))">
+				<A @(Model.displayVar("item26_menulink_attrs"))>@(Model.displayVar("item26_title"))</a>
+
+			</li>
+			}
+				</ul>
+	</li>
+	}
+	
+	@foreach (string _item27_menulink in Model.GetSection("item27_menulink", this)){
+	<LI class="  @(Model.displayVar("item27_current"))">
+		<A @(Model.displayVar("item27_menulink_attrs"))>@(Model.displayVar("item27_title"))</a>
+
+	</li>
+	}
+	
+	@foreach (string _item28_menulink in Model.GetSection("item28_menulink", this)){
+	<LI class="  @(Model.displayVar("item28_current"))">
+		<A @(Model.displayVar("item28_menulink_attrs"))>@(Model.displayVar("item28_title"))</a>
+
+	</li>
+	}
+</ul>

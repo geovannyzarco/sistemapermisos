@@ -1,0 +1,35 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = MVCFunctions.GetWebRootPath();
+}
+
+<DIV id="item1" class="rnr-b-hmenu @(Model.displayVar("menustyle")) Leaf  current" originalMenuTag="$$originalMenuTag">
+	<div>
+		<A @(Model.displayVar("item1_menulink_attrs"))>
+									Permisos
+			</a>
+	</div>
+</div>
+<DIV id="item2" class="rnr-b-hmenu @(Model.displayVar("menustyle")) Leaf " originalMenuTag="$$originalMenuTag">
+	<div>
+		<A @(Model.displayVar("item2_menulink_attrs"))>
+									Asignar usuarios a grupos
+			</a>
+	</div>
+</div>
+<DIV id="item3" class="rnr-b-hmenu @(Model.displayVar("menustyle")) Leaf " originalMenuTag="$$originalMenuTag">
+	<div>
+		<A @(Model.displayVar("item3_menulink_attrs"))>
+									Añadir/Editar usuarios
+			</a>
+	</div>
+</div>

@@ -1,0 +1,41 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = MVCFunctions.GetWebRootPath();
+}
+
+@foreach (string _item1_menulink in Model.GetSection("item1_menulink", this)){
+<TR id="item1" view="topitem" class="runner-b-vmenu runner-vmenu simple Leaf@{foreach (string _item1_current in Model.GetSection("item1_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>	
+	<td class="runner-cc">
+		<A @(Model.displayVar("item1_menulink_attrs"))>@(Model.displayVar("item1_title"))</a>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+@foreach (string _item2_menulink in Model.GetSection("item2_menulink", this)){
+<TR id="item2" view="topitem" class="runner-b-vmenu runner-vmenu simple Leaf@{foreach (string _item2_current in Model.GetSection("item2_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>	
+	<td class="runner-cc">
+		<A @(Model.displayVar("item2_menulink_attrs"))>@(Model.displayVar("item2_title"))</a>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+@foreach (string _item3_menulink in Model.GetSection("item3_menulink", this)){
+<TR id="item3" view="topitem" class="runner-b-vmenu runner-vmenu simple Leaf@{foreach (string _item3_current in Model.GetSection("item3_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>	
+	<td class="runner-cc">
+		<A @(Model.displayVar("item3_menulink_attrs"))>@(Model.displayVar("item3_title"))</a>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}

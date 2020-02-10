@@ -1,0 +1,18 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2020-01-16 21:42:07
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2020-01-16 21:42:07 127.0.0.1 GET / - 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 200 0 0 75676
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2020-01-16 22:00:33
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2020-01-16 22:00:33 127.0.0.1 GET / - 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 200 0 0 27298
+2020-01-16 22:00:34 127.0.0.1 GET /INGRESAR_PERMISO/list - 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 302 0 0 1515
+2020-01-16 22:00:34 127.0.0.1 GET /login return=true& 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 200 0 0 690
+2020-01-16 22:08:18 127.0.0.1 GET / - 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 200 0 0 27174
+2020-01-16 22:08:19 127.0.0.1 GET /INGRESAR_PERMISO/list - 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 302 0 0 1089
+2020-01-16 22:08:19 127.0.0.1 GET /login return=true& 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 200 0 0 437
+2020-01-16 22:14:48 127.0.0.1 GET / - 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 200 0 0 26353
+2020-01-16 22:14:50 127.0.0.1 GET /INGRESAR_PERMISO/list - 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 302 0 0 1100
+2020-01-16 22:14:50 127.0.0.1 GET /login return=true& 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 200 0 0 533

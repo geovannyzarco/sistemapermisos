@@ -1,0 +1,32 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2020-02-01 04:32:20
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2020-02-01 04:32:20 127.0.0.1 GET / - 8087 - 127.0.0.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.6+(KHTML,+like+Gecko)+Chrome/20.0.1092.0+Safari/536.6 - 200 0 0 59452
+2020-02-01 04:48:20 ::1 GET / - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 - 200 0 0 980
+2020-02-01 04:48:20 ::1 GET /styles/pages/.global_login.css - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/ 200 0 0 171
+2020-02-01 04:48:20 ::1 GET /include/bootstrap/css/jquery.mCustomScrollbar.css - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/ 200 0 0 197
+2020-02-01 04:48:20 ::1 GET /styles/default.css - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/ 200 0 64 207
+2020-02-01 04:48:20 ::1 GET /styles/font-awesome/css/font-awesome.min.css - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/ 200 0 64 206
+2020-02-01 04:48:20 ::1 GET /include/jquery-ui/smoothness/jquery-ui.min.css - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/ 200 0 64 258
+2020-02-01 04:48:20 ::1 GET /include/lang/Spanish.js - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/ 200 0 0 170
+2020-02-01 04:48:20 ::1 GET /styles/bootstrap/default/small/style.css - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/ 200 0 0 479
+2020-02-01 04:48:20 ::1 GET /include/loadfirst.js - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/ 200 0 0 475
+2020-02-01 04:48:20 ::1 GET /include/runnerJS/RunnerAll.js - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/ 200 0 0 476
+2020-02-01 04:48:21 ::1 GET /include/runnerJS/events/globalevents.js - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/ 200 0 0 7
+2020-02-01 04:48:21 ::1 GET /include/ajaxsuggest.js - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/ 200 0 0 73
+2020-02-01 04:48:21 ::1 GET /favicon.ico - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 - 404 0 64 142
+2020-02-01 04:48:24 ::1 POST /login - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/ 302 0 0 1598
+2020-02-01 04:48:29 ::1 GET /menu - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/ 200 0 0 5743
+2020-02-01 04:48:29 ::1 GET /styles/pages/.global_menu.css - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/menu 200 0 0 3
+2020-02-01 04:48:29 ::1 GET /styles/bootstrap/default/small/style.css - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/menu 200 0 64 117
+2020-02-01 04:48:29 ::1 GET /styles/bootstrap/fonts/glyphicons-halflings-regular.woff2 - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/styles/bootstrap/default/small/style.css 404 3 50 62
+2020-02-01 04:48:29 ::1 GET /styles/bootstrap/fonts/glyphicons-halflings-regular.woff - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/styles/bootstrap/default/small/style.css 200 0 64 43
+2020-02-01 04:48:55 ::1 GET /VISTOBUENO_JEFEINMEDIATO/list - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/menu 200 0 0 9799
+2020-02-01 04:48:55 ::1 GET /styles/pages/VISTOBUENO_JEFEINMEDIATO_list.css - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/VISTOBUENO_JEFEINMEDIATO/list 200 0 0 58
+2020-02-01 04:48:55 ::1 GET /styles/bootstrap/fonts/glyphicons-halflings-regular.woff2 - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/styles/bootstrap/default/small/style.css 404 3 50 4
+2020-02-01 04:49:20 ::1 POST /VISTOBUENO_JEFEINMEDIATO/edit - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/VISTOBUENO_JEFEINMEDIATO/list 200 0 0 3112
+2020-02-01 04:49:42 ::1 GET /APROBAR_COMPESADOS/list - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/VISTOBUENO_JEFEINMEDIATO/list 200 0 0 5283
+2020-02-01 04:49:42 ::1 GET /styles/pages/APROBAR_COMPESADOS_list.css - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/APROBAR_COMPESADOS/list 200 0 0 40
+2020-02-01 04:49:42 ::1 GET /styles/bootstrap/fonts/glyphicons-halflings-regular.woff2 - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/styles/bootstrap/default/small/style.css 404 3 50 4
+2020-02-01 04:49:49 ::1 POST /APROBAR_COMPESADOS/edit - 8087 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:72.0)+Gecko/20100101+Firefox/72.0 http://localhost:8087/APROBAR_COMPESADOS/list 200 0 0 1642

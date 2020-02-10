@@ -1,0 +1,399 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = MVCFunctions.GetWebRootPath();
+}
+
+<!doctype html>@(new HtmlString(MVCFunctions.GetBuferContentAndClearBufer()))
+<HTML @(Model.displayVar("html_attrs"))>
+	<head>
+		<META http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<META name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>@(Model.displayVar("pagetitle"))</title>
+
+		<META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<LINK REL="stylesheet" href="@(webRootPath)styles/default.css" type="text/css" />
+		@foreach (string _rtlCSS in Model.GetSection("rtlCSS", this)){
+		<LINK REL="stylesheet" href="@(webRootPath)styles/defaultRTL.css" type="text/css" />
+		}
+		@foreach (string _styleCSSFiles in Model.GetSection("styleCSSFiles", this)){
+		<LINK REL="stylesheet" href="@(webRootPath)@(Model.displayVar("stylepath"))" type="text/css" />
+		}
+	</head>
+
+	<BODY class="@(Model.displayVar("stylename")) function-view" @(Model.displayVar("bodyattrs"))>
+	@foreach (string _body in Model.GetSection("body", this)){
+		{Html.RenderSharedView("header");}
+		<style>@MvcHtmlString.Create(@"")@(Model.displayVar("containerCss"))@MvcHtmlString.Create(@"")</style>
+		
+		<div class="container r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							@foreach (string _top_block in Model.GetSection("top_block", this)){
+<DIV class="r-form" data-location="top" id="form_top_@(Model.displayVar("pageid"))" data-makeup="small" @(Model.displayVar("form_top")) data-pageid="@(Model.displayVar("pageid"))" data-v-width="4" data-v-margin="1">		
+	 
+		<div class="row">
+			 
+				<DIV data-cellId="top_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_top_c1")) class=" r-ori-vert			col-md-12
+	">
+	 
+		<H2 data-itemtype="view_header" data-itemid="view_header" @(Model.displayVar("item_view_header")) data-pageid="@(Model.displayVar("pageid"))">@(Model.displayVar("pagetitlelabel APROBACION_COMPESADOS_JEFEDEPARTAMENTO view"))</h2>
+	</div>					</div>
+	</div>		
+}
+									@foreach (string _above_grid_block in Model.GetSection("above-grid_block", this)){
+<DIV class="r-form" data-location="above-grid" id="form_above-grid_@(Model.displayVar("pageid"))" data-makeup="small" @(Model.displayVar("form_above-grid")) data-pageid="@(Model.displayVar("pageid"))" data-v-width="4" data-v-margin="1">		
+	</div>		
+}
+									@foreach (string _grid_block in Model.GetSection("grid_block", this)){
+
+
+
+
+ 
+	 
+												<TABLE data-body-align="center" data-location="grid" id="form_grid_@(Model.displayVar("pageid"))" data-makeup="small" @(Model.displayVar("form_grid")) data-pageid="@(Model.displayVar("pageid"))" class="r-edit-form" cellpadding="0" cellspacing="0" @(Model.displayVar("grid_hiddenattr")) data-form-width="1" data-v-width="4">
+	<tbody>
+										<tr>
+										
+
+@foreach (string _cellblock_grid_c3 in Model.GetSection("cellblock_grid_c3", this)){
+<TD @(Model.displayVar("cell_grid_c3")) class=" r-ori-vert" data-fullwidth data-cellId="grid_c3" data-pageid="@(Model.displayVar("pageid"))" data-v-cell="4">
+	<div edit-form-cell class="clearfix">
+				
+@foreach (string _id_compesados_fieldblock in Model.GetSection("id_compesados_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_id_compesados"))  r-vertical-field" data-fieldname="id_compesados" data-signal-error-for="id_compesados@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" @(Model.displayVar("item_integrated_edit_field")) data-pageid="@(Model.displayVar("pageid"))" data-field="id_compesados">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_id_compesados"))">
+		
+		@foreach (string _id_compesados_label in Model.GetSection("id_compesados_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO id_compesados"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("id_compesados_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _ONI_fieldblock in Model.GetSection("ONI_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_ONI"))  r-vertical-field" data-fieldname="ONI" data-signal-error-for="ONI@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" @(Model.displayVar("item_integrated_edit_field1")) data-pageid="@(Model.displayVar("pageid"))" data-field="ONI">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_ONI"))">
+		
+		@foreach (string _ONI_label in Model.GetSection("ONI_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO ONI"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("ONI_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _justificacion_fieldblock in Model.GetSection("justificacion_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_justificacion"))  r-vertical-field" data-fieldname="justificacion" data-signal-error-for="justificacion@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" @(Model.displayVar("item_integrated_edit_field6")) data-pageid="@(Model.displayVar("pageid"))" data-field="justificacion">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_justificacion"))">
+		
+		@foreach (string _justificacion_label in Model.GetSection("justificacion_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO justificacion"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("justificacion_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _anexo_fieldblock in Model.GetSection("anexo_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_anexo"))  r-vertical-field" data-fieldname="anexo" data-signal-error-for="anexo@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" @(Model.displayVar("item_integrated_edit_field7")) data-pageid="@(Model.displayVar("pageid"))" data-field="anexo">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_anexo"))">
+		
+		@foreach (string _anexo_label in Model.GetSection("anexo_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO anexo"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("anexo_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _observacion_fieldblock in Model.GetSection("observacion_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_observacion"))  r-vertical-field" data-fieldname="observacion" data-signal-error-for="observacion@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" @(Model.displayVar("item_integrated_edit_field8")) data-pageid="@(Model.displayVar("pageid"))" data-field="observacion">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_observacion"))">
+		
+		@foreach (string _observacion_label in Model.GetSection("observacion_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO observacion"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("observacion_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _id_estado_compesado_fieldblock in Model.GetSection("id_estado_compesado_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_id_estado_compesado"))  r-vertical-field" data-fieldname="id_estado_compesado" data-signal-error-for="id_estado_compesado@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" @(Model.displayVar("item_integrated_edit_field9")) data-pageid="@(Model.displayVar("pageid"))" data-field="id_estado_compesado">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_id_estado_compesado"))">
+		
+		@foreach (string _id_estado_compesado_label in Model.GetSection("id_estado_compesado_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO id_estado_compesado"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("id_estado_compesado_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _vistobueno1_fieldblock in Model.GetSection("vistobueno1_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_vistobueno1"))  r-vertical-field" data-fieldname="vistobueno1" data-signal-error-for="vistobueno1@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" @(Model.displayVar("item_integrated_edit_field10")) data-pageid="@(Model.displayVar("pageid"))" data-field="vistobueno1">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_vistobueno1"))">
+		
+		@foreach (string _vistobueno1_label in Model.GetSection("vistobueno1_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO vistobueno1"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("vistobueno1_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _nombre_fieldblock in Model.GetSection("nombre_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_nombre"))  r-vertical-field" data-fieldname="nombre" data-signal-error-for="nombre@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" @(Model.displayVar("item_integrated_edit_field11")) data-pageid="@(Model.displayVar("pageid"))" data-field="nombre">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_nombre"))">
+		
+		@foreach (string _nombre_label in Model.GetSection("nombre_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO nombre"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("nombre_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _vistobueno2_fieldblock in Model.GetSection("vistobueno2_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_vistobueno2"))  r-vertical-field" data-fieldname="vistobueno2" data-signal-error-for="vistobueno2@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" @(Model.displayVar("item_integrated_edit_field12")) data-pageid="@(Model.displayVar("pageid"))" data-field="vistobueno2">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_vistobueno2"))">
+		
+		@foreach (string _vistobueno2_label in Model.GetSection("vistobueno2_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO vistobueno2"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("vistobueno2_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _fecha_creacion_fieldblock in Model.GetSection("fecha_creacion_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_fecha_creacion"))  r-vertical-field" data-fieldname="fecha_creacion" data-signal-error-for="fecha_creacion@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" @(Model.displayVar("item_integrated_edit_field2")) data-pageid="@(Model.displayVar("pageid"))" data-field="fecha_creacion">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_fecha_creacion"))">
+		
+		@foreach (string _fecha_creacion_label in Model.GetSection("fecha_creacion_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO fecha_creacion"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("fecha_creacion_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _desde_fieldblock in Model.GetSection("desde_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_desde"))  r-vertical-field" data-fieldname="desde" data-signal-error-for="desde@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" @(Model.displayVar("item_integrated_edit_field3")) data-pageid="@(Model.displayVar("pageid"))" data-field="desde">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_desde"))">
+		
+		@foreach (string _desde_label in Model.GetSection("desde_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO desde"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("desde_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _hasta_fieldblock in Model.GetSection("hasta_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_hasta"))  r-vertical-field" data-fieldname="hasta" data-signal-error-for="hasta@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" @(Model.displayVar("item_integrated_edit_field4")) data-pageid="@(Model.displayVar("pageid"))" data-field="hasta">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_hasta"))">
+		
+		@foreach (string _hasta_label in Model.GetSection("hasta_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO hasta"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("hasta_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _dias_fieldblock in Model.GetSection("dias_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_dias"))  r-vertical-field" data-fieldname="dias" data-signal-error-for="dias@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" @(Model.displayVar("item_integrated_edit_field5")) data-pageid="@(Model.displayVar("pageid"))" data-field="dias">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_dias"))">
+		
+		@foreach (string _dias_label in Model.GetSection("dias_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO dias"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("dias_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _horas_fieldblock in Model.GetSection("horas_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_horas"))  r-vertical-field" data-fieldname="horas" data-signal-error-for="horas@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" @(Model.displayVar("item_integrated_edit_field13")) data-pageid="@(Model.displayVar("pageid"))" data-field="horas">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_horas"))">
+		
+		@foreach (string _horas_label in Model.GetSection("horas_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO horas"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("horas_value"))	</div>
+
+		
+</div>
+
+
+}
+											
+@foreach (string _minutos_fieldblock in Model.GetSection("minutos_fieldblock", this)){
+
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_minutos"))  r-vertical-field" data-fieldname="minutos" data-signal-error-for="minutos@(Model.displayVar("id"))" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" @(Model.displayVar("item_integrated_edit_field14")) data-pageid="@(Model.displayVar("pageid"))" data-field="minutos">
+
+	
+	<LABEL class="col-md-offset-3 col-md-6" for="@(Model.displayVar("labelfor_minutos"))">
+		
+		@foreach (string _minutos_label in Model.GetSection("minutos_label", this)){@(Model.displayVar("label APROBACION_COMPESADOS_JEFEDEPARTAMENTO minutos"))}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		@(Model.displayVar("minutos_value"))	</div>
+
+		
+</div>
+
+
+}
+	
+								</td>
+			}
+								</tr>
+			</tbody></table>
+}
+									@foreach (string _below_grid_block in Model.GetSection("below-grid_block", this)){
+<DIV class="r-form" data-location="below-grid" id="form_below-grid_@(Model.displayVar("pageid"))" data-makeup="small" @(Model.displayVar("form_below-grid")) data-pageid="@(Model.displayVar("pageid"))" data-v-width="4" data-v-margin="1">		
+	 
+		<div class="row">
+			 
+				<DIV data-cellId="below-grid_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_below-grid_c1")) class="			col-md-6
+	">
+	 
+		@foreach (string _back_button in Model.GetSection("back_button", this)){
+<SPAN data-itemtype="view_back_list" data-itemid="view_back_list" @(Model.displayVar("item_view_back_list")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+	<A type="button" title class="btn btn-default   
+	" @(Model.displayVar("backbutton_attrs"))>
+							Volver a la lista			</a>
+</span>
+}
+	 
+		@foreach (string _close_button in Model.GetSection("close_button", this)){
+<SPAN data-itemtype="view_close" data-itemid="view_close" @(Model.displayVar("item_view_close")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+	<A type="button" title class="btn btn-default   
+	" href="#" @(Model.displayVar("closebutton_attrs"))>
+							Cerrar ventana			</a>
+</span>
+}
+	</div>			 
+				<DIV data-cellId="below-grid_c2" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_below-grid_c2")) class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<SPAN data-itemtype="hamburger" data-itemid="hamburger" @(Model.displayVar("item_hamburger")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+</span>
+	</div>					</div>
+	</div>		
+}
+			</div>
+		{Html.RenderSharedView("footer");}
+	}
+	</body>
+</html>

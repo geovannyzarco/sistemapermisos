@@ -1,0 +1,6 @@
+
+/* Put  your custom CSS code here */
+.container .jumbotron, .container-fluid .jumbotron {
+    width: 650px;
+}
+

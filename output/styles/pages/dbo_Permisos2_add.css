@@ -1,0 +1,9 @@
+[data-cellid="grid_c3"][data-page="dbo_Permisos2_add"][data-cellid="grid_c3"][data-page="dbo_Permisos2_add"][data-cellid="grid_c3"][data-page="dbo_Permisos2_add"] {
+  width: 50%;
+}
+
+/* Put  your custom CSS code here */
+.container .jumbotron, .container-fluid .jumbotron {
+    width: 650px;
+}
+

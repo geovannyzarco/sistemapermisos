@@ -1,0 +1,17 @@
+Date	Time	IP	User	Table	Action	Key field	Field	Old value	New value
+Feb 04,2020	22:22:25	127.0.0.1	EP00116	dbo.EMPLEADO	login
+Feb 04,2020	22:38:29	127.0.0.1	EP00116	dbo.EMPLEADO	login
+Feb 04,2020	22:53:01	127.0.0.1	EP00116	dbo.EMPLEADO	login
+Feb 04,2020	22:55:13	127.0.0.1	EP00116	dbo.Permisos2	add	407	ONI		EP00116
+Feb 04,2020	22:55:13	127.0.0.1	EP00116	dbo.Permisos2	add	407	id_tipopermiso		1
+Feb 04,2020	22:55:13	127.0.0.1	EP00116	dbo.Permisos2	add	407	fecha_solicitud		2020-02-04 22:53:41
+Feb 04,2020	22:55:13	127.0.0.1	EP00116	dbo.Permisos2	add	407	motivo		prueba
+Feb 04,2020	22:55:13	127.0.0.1	EP00116	dbo.Permisos2	add	407	fecha_inicio		2020-02-07 07:30:00
+Feb 04,2020	22:55:13	127.0.0.1	EP00116	dbo.Permisos2	add	407	fecha_final		2020-02-07 15:30:00
+Feb 04,2020	23:00:53	127.0.0.1	EP00116	dbo.Permisos2	edit	407	fecha_inicio	2020-02-07 07:30:00	2020-02-07 07:25:00
+Feb 04,2020	23:07:52	127.0.0.1	EP00116	dbo.EMPLEADO	login
+Feb 04,2020	23:33:33	127.0.0.1	RT00196	dbo.EMPLEADO	login
+Feb 04,2020	23:34:30	127.0.0.1	RT00196	dbo.Permisos2	edit	347	fecha_inicio	2020-02-04 07:31:00	2020-02-04 07:30:00
+Feb 04,2020	23:38:05	127.0.0.1	RT00196	dbo.EMPLEADO	login
+Feb 04,2020	23:39:19	127.0.0.1	RT00196	dbo.Permisos2	edit	347	fecha_inicio	2020-02-04 07:30:00	2020-02-04 07:31:00
+Feb 04,2020	23:58:16	127.0.0.1	RT00196	dbo.Permisos2	edit	347	fecha_inicio	2020-02-04 07:31:00	2020-02-04 07:30:00

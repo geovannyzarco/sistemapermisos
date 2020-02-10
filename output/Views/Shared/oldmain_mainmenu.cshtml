@@ -1,0 +1,910 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = MVCFunctions.GetWebRootPath();
+}
+
+@foreach (string _mainmenu_block in Model.GetSection("mainmenu_block", this)){
+foreach (string _treeLikeTypeMenu in Model.GetSection("treeLikeTypeMenu", this)){
+	<tr class="runner-b-vmenu runner-vmenu tree">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		<div class="manage">
+			<A href="#"><IMG alt="*" src="@(webRootPath)images/plus.gif" />
+				Expandir todo
+			</a>
+		</div>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+
+
+foreach (string _item1_menulink in Model.GetSection("item1_menulink", this)){
+<TR id="item1" view="topitem" class="runner-b-vmenu runner-vmenu tree Group@{foreach (string _item1_current in Model.GetSection("item1_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item1_groupimage in Model.GetSection("item1_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item1_menulink_attrs")) @{foreach (string _item1_current in Model.GetSection("item1_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item1_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+
+foreach (string _item2_menulink in Model.GetSection("item2_menulink", this)){
+<TR id="item2" topparent="item1" parent="item1" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item2_current in Model.GetSection("item2_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item2_groupimage in Model.GetSection("item2_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item2_menulink_attrs")) @{foreach (string _item2_current in Model.GetSection("item2_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item2_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item3_menulink in Model.GetSection("item3_menulink", this)){
+<TR id="item3" topparent="item1" parent="item1" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item3_current in Model.GetSection("item3_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item3_groupimage in Model.GetSection("item3_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item3_menulink_attrs")) @{foreach (string _item3_current in Model.GetSection("item3_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item3_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item4_menulink in Model.GetSection("item4_menulink", this)){
+<TR id="item4" topparent="item1" parent="item1" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item4_current in Model.GetSection("item4_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item4_groupimage in Model.GetSection("item4_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item4_menulink_attrs")) @{foreach (string _item4_current in Model.GetSection("item4_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item4_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item5_menulink in Model.GetSection("item5_menulink", this)){
+<TR id="item5" topparent="item1" parent="item1" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item5_current in Model.GetSection("item5_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item5_groupimage in Model.GetSection("item5_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item5_menulink_attrs")) @{foreach (string _item5_current in Model.GetSection("item5_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item5_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item6_menulink in Model.GetSection("item6_menulink", this)){
+<TR id="item6" topparent="item1" parent="item1" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item6_current in Model.GetSection("item6_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item6_groupimage in Model.GetSection("item6_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item6_menulink_attrs")) @{foreach (string _item6_current in Model.GetSection("item6_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item6_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item7_menulink in Model.GetSection("item7_menulink", this)){
+<TR id="item7" topparent="item1" parent="item1" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item7_current in Model.GetSection("item7_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item7_groupimage in Model.GetSection("item7_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item7_menulink_attrs")) @{foreach (string _item7_current in Model.GetSection("item7_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item7_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item8_menulink in Model.GetSection("item8_menulink", this)){
+<TR id="item8" topparent="item1" parent="item1" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item8_current in Model.GetSection("item8_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item8_groupimage in Model.GetSection("item8_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item8_menulink_attrs")) @{foreach (string _item8_current in Model.GetSection("item8_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item8_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item9_menulink in Model.GetSection("item9_menulink", this)){
+<TR id="item9" topparent="item1" parent="item1" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item9_current in Model.GetSection("item9_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item9_groupimage in Model.GetSection("item9_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item9_menulink_attrs")) @{foreach (string _item9_current in Model.GetSection("item9_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item9_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+}
+
+foreach (string _item10_menulink in Model.GetSection("item10_menulink", this)){
+<TR id="item10" view="topitem" class="runner-b-vmenu runner-vmenu tree Group@{foreach (string _item10_current in Model.GetSection("item10_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item10_groupimage in Model.GetSection("item10_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item10_menulink_attrs")) @{foreach (string _item10_current in Model.GetSection("item10_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item10_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+
+foreach (string _item11_menulink in Model.GetSection("item11_menulink", this)){
+<TR id="item11" topparent="item10" parent="item10" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item11_current in Model.GetSection("item11_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item11_groupimage in Model.GetSection("item11_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item11_menulink_attrs")) @{foreach (string _item11_current in Model.GetSection("item11_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item11_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item12_menulink in Model.GetSection("item12_menulink", this)){
+<TR id="item12" topparent="item10" parent="item10" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item12_current in Model.GetSection("item12_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item12_groupimage in Model.GetSection("item12_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item12_menulink_attrs")) @{foreach (string _item12_current in Model.GetSection("item12_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item12_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item13_menulink in Model.GetSection("item13_menulink", this)){
+<TR id="item13" topparent="item10" parent="item10" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item13_current in Model.GetSection("item13_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item13_groupimage in Model.GetSection("item13_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item13_menulink_attrs")) @{foreach (string _item13_current in Model.GetSection("item13_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item13_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item14_menulink in Model.GetSection("item14_menulink", this)){
+<TR id="item14" topparent="item10" parent="item10" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item14_current in Model.GetSection("item14_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item14_groupimage in Model.GetSection("item14_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item14_menulink_attrs")) @{foreach (string _item14_current in Model.GetSection("item14_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item14_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+}
+
+foreach (string _item15_menulink in Model.GetSection("item15_menulink", this)){
+<TR id="item15" view="topitem" class="runner-b-vmenu runner-vmenu tree Group@{foreach (string _item15_current in Model.GetSection("item15_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item15_groupimage in Model.GetSection("item15_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item15_menulink_attrs")) @{foreach (string _item15_current in Model.GetSection("item15_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item15_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+
+foreach (string _item16_menulink in Model.GetSection("item16_menulink", this)){
+<TR id="item16" topparent="item15" parent="item15" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item16_current in Model.GetSection("item16_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item16_groupimage in Model.GetSection("item16_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item16_menulink_attrs")) @{foreach (string _item16_current in Model.GetSection("item16_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item16_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item17_menulink in Model.GetSection("item17_menulink", this)){
+<TR id="item17" topparent="item15" parent="item15" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item17_current in Model.GetSection("item17_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item17_groupimage in Model.GetSection("item17_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item17_menulink_attrs")) @{foreach (string _item17_current in Model.GetSection("item17_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item17_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item18_menulink in Model.GetSection("item18_menulink", this)){
+<TR id="item18" topparent="item15" parent="item15" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item18_current in Model.GetSection("item18_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item18_groupimage in Model.GetSection("item18_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item18_menulink_attrs")) @{foreach (string _item18_current in Model.GetSection("item18_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item18_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item19_menulink in Model.GetSection("item19_menulink", this)){
+<TR id="item19" topparent="item15" parent="item15" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item19_current in Model.GetSection("item19_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item19_groupimage in Model.GetSection("item19_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item19_menulink_attrs")) @{foreach (string _item19_current in Model.GetSection("item19_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item19_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+}
+
+foreach (string _item20_menulink in Model.GetSection("item20_menulink", this)){
+<TR id="item20" view="topitem" class="runner-b-vmenu runner-vmenu tree Group@{foreach (string _item20_current in Model.GetSection("item20_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item20_groupimage in Model.GetSection("item20_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item20_menulink_attrs")) @{foreach (string _item20_current in Model.GetSection("item20_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item20_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+
+foreach (string _item21_menulink in Model.GetSection("item21_menulink", this)){
+<TR id="item21" topparent="item20" parent="item20" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item21_current in Model.GetSection("item21_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item21_groupimage in Model.GetSection("item21_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item21_menulink_attrs")) @{foreach (string _item21_current in Model.GetSection("item21_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item21_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item22_menulink in Model.GetSection("item22_menulink", this)){
+<TR id="item22" topparent="item20" parent="item20" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item22_current in Model.GetSection("item22_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item22_groupimage in Model.GetSection("item22_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item22_menulink_attrs")) @{foreach (string _item22_current in Model.GetSection("item22_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item22_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item23_menulink in Model.GetSection("item23_menulink", this)){
+<TR id="item23" topparent="item20" parent="item20" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item23_current in Model.GetSection("item23_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item23_groupimage in Model.GetSection("item23_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item23_menulink_attrs")) @{foreach (string _item23_current in Model.GetSection("item23_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item23_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item24_menulink in Model.GetSection("item24_menulink", this)){
+<TR id="item24" topparent="item20" parent="item20" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item24_current in Model.GetSection("item24_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item24_groupimage in Model.GetSection("item24_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item24_menulink_attrs")) @{foreach (string _item24_current in Model.GetSection("item24_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item24_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item25_menulink in Model.GetSection("item25_menulink", this)){
+<TR id="item25" topparent="item20" parent="item20" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item25_current in Model.GetSection("item25_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item25_groupimage in Model.GetSection("item25_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item25_menulink_attrs")) @{foreach (string _item25_current in Model.GetSection("item25_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item25_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item26_menulink in Model.GetSection("item26_menulink", this)){
+<TR id="item26" topparent="item20" parent="item20" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf@{foreach (string _item26_current in Model.GetSection("item26_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item26_groupimage in Model.GetSection("item26_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item26_menulink_attrs")) @{foreach (string _item26_current in Model.GetSection("item26_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item26_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+}
+
+foreach (string _item27_menulink in Model.GetSection("item27_menulink", this)){
+<TR id="item27" view="topitem" class="runner-b-vmenu runner-vmenu tree Leaf@{foreach (string _item27_current in Model.GetSection("item27_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item27_groupimage in Model.GetSection("item27_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item27_menulink_attrs")) @{foreach (string _item27_current in Model.GetSection("item27_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item27_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item28_menulink in Model.GetSection("item28_menulink", this)){
+<TR id="item28" view="topitem" class="runner-b-vmenu runner-vmenu tree Leaf@{foreach (string _item28_current in Model.GetSection("item28_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item28_groupimage in Model.GetSection("item28_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item28_menulink_attrs")) @{foreach (string _item28_current in Model.GetSection("item28_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item28_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+		foreach (string _adminarea_link in Model.GetSection("adminarea_link", this)){
+	<tr id="itemAAS" view="topitem" class="runner-b-vmenu runner-vmenu tree Separator">
+	<td class="runner-cl"></td>	
+	<td class="runner-cc">@(Model.displayVar("itemAAS_separator"))</td>
+	<td class="runner-cr"></td>
+</tr>
+<tr id="itemAA" view="topitem" class="runner-b-vmenu runner-vmenu tree Leaf">
+	<td class="runner-cl"></td>	
+	<td class="runner-cc">
+		<A @(Model.displayVar("itemAA_menulink_attrs")) @(Model.displayVar("adminarealink_attrs"))>@(Model.displayVar("itemAA_title"))</a>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+	}
+
+}
+	
+foreach (string _simpleTypeMenu in Model.GetSection("simpleTypeMenu", this)){
+	
+foreach (string _item1_menulink_1 in Model.GetSection("item1_menulink", this)){
+<TR class="runner-b-vmenu runner-vmenu simple Group@{foreach (string _item1_current in Model.GetSection("item1_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item1_groupimage_1 in Model.GetSection("item1_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item1_menulink_attrs")) @{foreach (string _item1_current in Model.GetSection("item1_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item1_title"))</a>
+
+
+
+				<ul>
+		
+			@foreach (string _item2_menulink_1 in Model.GetSection("item2_menulink", this)){
+			<LI parent="group1" class="Leaf@{foreach (string _item2_current in Model.GetSection("item2_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item2_groupimage_1 in Model.GetSection("item2_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item2_menulink_attrs")) @{foreach (string _item2_current in Model.GetSection("item2_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item2_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item3_menulink_1 in Model.GetSection("item3_menulink", this)){
+			<LI parent="group1" class="Leaf@{foreach (string _item3_current in Model.GetSection("item3_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item3_groupimage_1 in Model.GetSection("item3_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item3_menulink_attrs")) @{foreach (string _item3_current in Model.GetSection("item3_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item3_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item4_menulink_1 in Model.GetSection("item4_menulink", this)){
+			<LI parent="group1" class="Leaf@{foreach (string _item4_current in Model.GetSection("item4_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item4_groupimage_1 in Model.GetSection("item4_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item4_menulink_attrs")) @{foreach (string _item4_current in Model.GetSection("item4_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item4_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item5_menulink_1 in Model.GetSection("item5_menulink", this)){
+			<LI parent="group1" class="Leaf@{foreach (string _item5_current in Model.GetSection("item5_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item5_groupimage_1 in Model.GetSection("item5_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item5_menulink_attrs")) @{foreach (string _item5_current in Model.GetSection("item5_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item5_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item6_menulink_1 in Model.GetSection("item6_menulink", this)){
+			<LI parent="group1" class="Leaf@{foreach (string _item6_current in Model.GetSection("item6_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item6_groupimage_1 in Model.GetSection("item6_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item6_menulink_attrs")) @{foreach (string _item6_current in Model.GetSection("item6_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item6_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item7_menulink_1 in Model.GetSection("item7_menulink", this)){
+			<LI parent="group1" class="Leaf@{foreach (string _item7_current in Model.GetSection("item7_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item7_groupimage_1 in Model.GetSection("item7_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item7_menulink_attrs")) @{foreach (string _item7_current in Model.GetSection("item7_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item7_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item8_menulink_1 in Model.GetSection("item8_menulink", this)){
+			<LI parent="group1" class="Leaf@{foreach (string _item8_current in Model.GetSection("item8_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item8_groupimage_1 in Model.GetSection("item8_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item8_menulink_attrs")) @{foreach (string _item8_current in Model.GetSection("item8_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item8_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item9_menulink_1 in Model.GetSection("item9_menulink", this)){
+			<LI parent="group1" class="Leaf@{foreach (string _item9_current in Model.GetSection("item9_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item9_groupimage_1 in Model.GetSection("item9_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item9_menulink_attrs")) @{foreach (string _item9_current in Model.GetSection("item9_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item9_title"))</a>
+
+
+
+			</li>
+			}
+				</ul>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item10_menulink_1 in Model.GetSection("item10_menulink", this)){
+<TR class="runner-b-vmenu runner-vmenu simple Group@{foreach (string _item10_current in Model.GetSection("item10_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item10_groupimage_1 in Model.GetSection("item10_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item10_menulink_attrs")) @{foreach (string _item10_current in Model.GetSection("item10_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item10_title"))</a>
+
+
+
+				<ul>
+		
+			@foreach (string _item11_menulink_1 in Model.GetSection("item11_menulink", this)){
+			<LI parent="group10" class="Leaf@{foreach (string _item11_current in Model.GetSection("item11_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item11_groupimage_1 in Model.GetSection("item11_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item11_menulink_attrs")) @{foreach (string _item11_current in Model.GetSection("item11_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item11_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item12_menulink_1 in Model.GetSection("item12_menulink", this)){
+			<LI parent="group10" class="Leaf@{foreach (string _item12_current in Model.GetSection("item12_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item12_groupimage_1 in Model.GetSection("item12_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item12_menulink_attrs")) @{foreach (string _item12_current in Model.GetSection("item12_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item12_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item13_menulink_1 in Model.GetSection("item13_menulink", this)){
+			<LI parent="group10" class="Leaf@{foreach (string _item13_current in Model.GetSection("item13_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item13_groupimage_1 in Model.GetSection("item13_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item13_menulink_attrs")) @{foreach (string _item13_current in Model.GetSection("item13_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item13_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item14_menulink_1 in Model.GetSection("item14_menulink", this)){
+			<LI parent="group10" class="Leaf@{foreach (string _item14_current in Model.GetSection("item14_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item14_groupimage_1 in Model.GetSection("item14_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item14_menulink_attrs")) @{foreach (string _item14_current in Model.GetSection("item14_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item14_title"))</a>
+
+
+
+			</li>
+			}
+				</ul>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item15_menulink_1 in Model.GetSection("item15_menulink", this)){
+<TR class="runner-b-vmenu runner-vmenu simple Group@{foreach (string _item15_current in Model.GetSection("item15_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item15_groupimage_1 in Model.GetSection("item15_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item15_menulink_attrs")) @{foreach (string _item15_current in Model.GetSection("item15_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item15_title"))</a>
+
+
+
+				<ul>
+		
+			@foreach (string _item16_menulink_1 in Model.GetSection("item16_menulink", this)){
+			<LI parent="group15" class="Leaf@{foreach (string _item16_current in Model.GetSection("item16_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item16_groupimage_1 in Model.GetSection("item16_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item16_menulink_attrs")) @{foreach (string _item16_current in Model.GetSection("item16_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item16_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item17_menulink_1 in Model.GetSection("item17_menulink", this)){
+			<LI parent="group15" class="Leaf@{foreach (string _item17_current in Model.GetSection("item17_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item17_groupimage_1 in Model.GetSection("item17_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item17_menulink_attrs")) @{foreach (string _item17_current in Model.GetSection("item17_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item17_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item18_menulink_1 in Model.GetSection("item18_menulink", this)){
+			<LI parent="group15" class="Leaf@{foreach (string _item18_current in Model.GetSection("item18_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item18_groupimage_1 in Model.GetSection("item18_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item18_menulink_attrs")) @{foreach (string _item18_current in Model.GetSection("item18_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item18_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item19_menulink_1 in Model.GetSection("item19_menulink", this)){
+			<LI parent="group15" class="Leaf@{foreach (string _item19_current in Model.GetSection("item19_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item19_groupimage_1 in Model.GetSection("item19_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item19_menulink_attrs")) @{foreach (string _item19_current in Model.GetSection("item19_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item19_title"))</a>
+
+
+
+			</li>
+			}
+				</ul>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item20_menulink_1 in Model.GetSection("item20_menulink", this)){
+<TR class="runner-b-vmenu runner-vmenu simple Group@{foreach (string _item20_current in Model.GetSection("item20_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item20_groupimage_1 in Model.GetSection("item20_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item20_menulink_attrs")) @{foreach (string _item20_current in Model.GetSection("item20_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item20_title"))</a>
+
+
+
+				<ul>
+		
+			@foreach (string _item21_menulink_1 in Model.GetSection("item21_menulink", this)){
+			<LI parent="group20" class="Leaf@{foreach (string _item21_current in Model.GetSection("item21_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item21_groupimage_1 in Model.GetSection("item21_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item21_menulink_attrs")) @{foreach (string _item21_current in Model.GetSection("item21_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item21_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item22_menulink_1 in Model.GetSection("item22_menulink", this)){
+			<LI parent="group20" class="Leaf@{foreach (string _item22_current in Model.GetSection("item22_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item22_groupimage_1 in Model.GetSection("item22_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item22_menulink_attrs")) @{foreach (string _item22_current in Model.GetSection("item22_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item22_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item23_menulink_1 in Model.GetSection("item23_menulink", this)){
+			<LI parent="group20" class="Leaf@{foreach (string _item23_current in Model.GetSection("item23_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item23_groupimage_1 in Model.GetSection("item23_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item23_menulink_attrs")) @{foreach (string _item23_current in Model.GetSection("item23_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item23_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item24_menulink_1 in Model.GetSection("item24_menulink", this)){
+			<LI parent="group20" class="Leaf@{foreach (string _item24_current in Model.GetSection("item24_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item24_groupimage_1 in Model.GetSection("item24_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item24_menulink_attrs")) @{foreach (string _item24_current in Model.GetSection("item24_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item24_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item25_menulink_1 in Model.GetSection("item25_menulink", this)){
+			<LI parent="group20" class="Leaf@{foreach (string _item25_current in Model.GetSection("item25_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item25_groupimage_1 in Model.GetSection("item25_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item25_menulink_attrs")) @{foreach (string _item25_current in Model.GetSection("item25_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item25_title"))</a>
+
+
+
+			</li>
+			}
+						
+			@foreach (string _item26_menulink_1 in Model.GetSection("item26_menulink", this)){
+			<LI parent="group20" class="Leaf@{foreach (string _item26_current in Model.GetSection("item26_current", this)){@MvcHtmlString.Create(@" current")}}">
+				@foreach (string _item26_groupimage_1 in Model.GetSection("item26_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item26_menulink_attrs")) @{foreach (string _item26_current in Model.GetSection("item26_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item26_title"))</a>
+
+
+
+			</li>
+			}
+				</ul>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item27_menulink_1 in Model.GetSection("item27_menulink", this)){
+<TR class="runner-b-vmenu runner-vmenu simple Leaf@{foreach (string _item27_current in Model.GetSection("item27_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item27_groupimage_1 in Model.GetSection("item27_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item27_menulink_attrs")) @{foreach (string _item27_current in Model.GetSection("item27_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item27_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+foreach (string _item28_menulink_1 in Model.GetSection("item28_menulink", this)){
+<TR class="runner-b-vmenu runner-vmenu simple Leaf@{foreach (string _item28_current in Model.GetSection("item28_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		@foreach (string _item28_groupimage_1 in Model.GetSection("item28_groupimage", this)){
+<span><IMG alt="*" src="@(webRootPath)images/plus.gif" class="groupImg" /></span>
+}
+<A @(Model.displayVar("item28_menulink_attrs")) @{foreach (string _item28_current in Model.GetSection("item28_current", this)){@MvcHtmlString.Create(@"class=""curlink"" ")}}>@(Model.displayVar("item28_title"))</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+		foreach (string _adminarea_link_1 in Model.GetSection("adminarea_link", this)){
+	<tr id="itemAAS" view="topitem" class="runner-b-vmenu runner-vmenu tree Separator">
+	<td class="runner-cl"></td>	
+	<td class="runner-cc">@(Model.displayVar("itemAAS_separator"))</td>
+	<td class="runner-cr"></td>
+</tr>
+<tr id="itemAA" view="topitem" class="runner-b-vmenu runner-vmenu tree Leaf">
+	<td class="runner-cl"></td>	
+	<td class="runner-cc">
+		<A @(Model.displayVar("itemAA_menulink_attrs")) @(Model.displayVar("adminarealink_attrs"))>@(Model.displayVar("itemAA_title"))</a>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+	}
+
+}
+
+foreach (string _adminAreaTypeMenu in Model.GetSection("adminAreaTypeMenu", this)){
+foreach (string _item1_menulink_2 in Model.GetSection("item1_menulink", this)){
+<TR id="item1" view="topitem" class="runner-b-vmenu runner-vmenu simple Leaf@{foreach (string _item1_current in Model.GetSection("item1_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>	
+	<td class="runner-cc">
+		<A @(Model.displayVar("item1_menulink_attrs"))>@(Model.displayVar("item1_title"))</a>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+foreach (string _item2_menulink_2 in Model.GetSection("item2_menulink", this)){
+<TR id="item2" view="topitem" class="runner-b-vmenu runner-vmenu simple Leaf@{foreach (string _item2_current in Model.GetSection("item2_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>	
+	<td class="runner-cc">
+		<A @(Model.displayVar("item2_menulink_attrs"))>@(Model.displayVar("item2_title"))</a>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+foreach (string _item3_menulink_2 in Model.GetSection("item3_menulink", this)){
+<TR id="item3" view="topitem" class="runner-b-vmenu runner-vmenu simple Leaf@{foreach (string _item3_current in Model.GetSection("item3_current", this)){@MvcHtmlString.Create(@" current")}}">
+	<td class="runner-cl"></td>	
+	<td class="runner-cc">
+		<A @(Model.displayVar("item3_menulink_attrs"))>@(Model.displayVar("item3_title"))</a>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+}
+
+}
+}
